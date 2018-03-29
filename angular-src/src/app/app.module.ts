@@ -5,13 +5,14 @@ import { HttpModule} from '@angular/http';
 import {RouterModule, Routes} from '@angular/router'; 
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './component/home/home.component';
-import { OurschoolComponent } from './component/ourschool/ourschool.component';
-import { TestimonialsComponent } from './component/testimonials/testimonials.component';
-import { TeamComponent } from './component/team/team.component';
-import { PianoComponent } from './component/piano/piano.component';
-import { ProductionComponent } from './component/production/production.component';
-import { ContactComponent } from './component/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { OurschoolComponent } from './components/ourschool/ourschool.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { TeamComponent } from './components/team/team.component';
+import { PianoComponent } from './components/piano/piano.component';
+import { ProductionComponent } from './components/production/production.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 const appRoutes: Routes = [  // url:component routing
   {path:'', component: HomeComponent},
@@ -32,7 +33,8 @@ const appRoutes: Routes = [  // url:component routing
     TeamComponent,
     PianoComponent,
     ProductionComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent
   ],
   imports: [  
     BrowserModule,
