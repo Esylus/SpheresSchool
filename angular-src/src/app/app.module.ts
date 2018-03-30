@@ -4,6 +4,8 @@ import { FormsModule} from '@angular/forms';
 import { HttpModule} from '@angular/http';
 import {RouterModule, Routes} from '@angular/router'; 
 
+import {SendMsgService} from './services/send-msg.service';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { OurschoolComponent } from './components/ourschool/ourschool.component';
@@ -42,7 +44,7 @@ const appRoutes: Routes = [  // url:component routing
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [SendMsgService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
