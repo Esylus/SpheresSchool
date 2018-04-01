@@ -33,7 +33,7 @@ nav.navbar {
 .dropdown-menu .dropdown-item{
     color: rgb(255, 255, 255);
     font-family: kouskFont, sans-serif;
-    font-size: 150%;
+    font-size: 130%;
     background-color:transparent; 
     text-shadow: 3px 1px #000000; 
 }
