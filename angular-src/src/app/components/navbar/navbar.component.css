@@ -1,12 +1,67 @@
-nav {
+@font-face{                            /* load font for use */
+    font-family: kouskFont;
+    src: url("../../../assets/fonts/CurlyStars.ttf");
+}
+
+/* make navbar overlay bg image */
+nav.navbar {                                     
     background-color: transparent;
     position: fixed;
     width: 100%;
 }
 
+/* background of dropdowns  */
 .navbar-nav > li > .dropdown-menu {
      background-color: transparent; 
     }
+
+/* make nav items white */
+.navbar .nav-item .nav-link{
+    color: rgb(255, 255, 255);
+    font-family: kouskFont, sans-serif;
+    font-size: 180%;
+    text-shadow: 3px 1px #000000;
+    padding-left: 15px;
+}
+
+/* make nav items white HOVER */
+.navbar .nav-item .nav-link:hover{
+    color: rgb(239, 245, 238);
+}
+
+/* make dropdown nav items white */
+.dropdown-menu .dropdown-item{
+    color: rgb(255, 255, 255);
+    font-family: kouskFont, sans-serif;
+    font-size: 150%;
+    background-color:transparent; 
+    text-shadow: 3px 1px #000000; 
+}
+
+/* make dropdown nav items white */
+.dropdown-menu .dropdown-item:hover{
+    color: rgb(239, 245, 238);
+}
+
+.dropdown-menu {
+    border: 5px;
+}
+
+/* Dropdown hover  */
+.dropdown-menu .dropdown-item:hover{
+    background-color:transparent;
+}
+
+
+/* change hamburger button border color */
+button.navbar-toggler{
+    border-color: rgb(251, 251, 251);
+    box-shadow: 2px 1px #000000; 
+  }
+
+
+
+
 
 /* .dropdown-item{
     color: white;
