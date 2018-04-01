@@ -1,5 +1,12 @@
 nav
 {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+}
+
+/* nav
+{
     position:fixed;
     top: 0;
     left: 0;
@@ -48,4 +55,4 @@ nav ul li a
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-}
+} */
