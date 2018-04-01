@@ -1,20 +1,5 @@
 
 
-<!-- <nav>
-    <div class="brand">
-        <h2>Piano Lessons</h2>
-    </div>
-  <ul>
-    <li><a [routerLink]="['/']">Home</a></li>
-    <li><a [routerLink]="['/ourschool']">Our School</a></li>
-    <li><a [routerLink]="['/testimonials']">Testimonials</a></li>
-    <li><a [routerLink]="['/team']">Team</a></li>
-    <li><a [routerLink]="['/piano']">Piano</a></li>
-    <li><a [routerLink]="['/production']">Production</a></li>
-    <li><a [routerLink]="['/contact']">Contact</a></li>
-  </ul>
-</nav> -->
-
 
 <nav class="navbar navbar-expand-md navbar-dark sticky-top" >
 	<div class="container-fluid">
@@ -24,12 +9,22 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item" active><a class="nav-link" [routerLink]="['/']">Home</a></li>
-				<li class="nav-item"><a class="nav-link" [routerLink]="['/ourschool']">Our School</a></li>
-				<li class="nav-item"><a class="nav-link" [routerLink]="['/testimonials']">Testimonials</a></li>
-				<li class="nav-item"><a class="nav-link" [routerLink]="['/team']">Team</a></li>
-				<li class="nav-item"><a class="nav-link" [routerLink]="['/piano']">Piano</a></li>
-				<li class="nav-item"><a class="nav-link" [routerLink]="['/production']">Production</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/']">Home</a></li>       
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" [routerLink]="['/ourschool']">Our School</a>
+              <a class="dropdown-item" [routerLink]="['/testimonials']">Testimonials</a>
+              <a class="dropdown-item" [routerLink]="['/team']">Team</a>             
+            </div>
+          </li>         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">Lessons</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" [routerLink]="['/piano']">Piano</a>
+              <a class="dropdown-item" [routerLink]="['/production']">Production</a>             
+            </div>
+          </li>  
 				<li class="nav-item"><a class="nav-link" [routerLink]="['/contact']">Contact</a></li>
 			</ul>
 		</div>
