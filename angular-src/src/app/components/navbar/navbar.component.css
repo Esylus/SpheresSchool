@@ -1,4 +1,4 @@
-nav 
+nav
 {
     position:fixed;
     top: 0;
@@ -17,14 +17,14 @@ nav .brand
     line-height: 70px;
 }
 
-nav .brand h2 
+nav .brand h2
 {
     margin: 0;
     padding: 0;
     color: #fff;
 }
 
-nav ul 
+nav ul
 {
     float: right;
     display: flex;
@@ -32,9 +32,9 @@ nav ul
     padding: 0;
 }
 
-nav ul li 
+nav ul li
 {
-    list-style: none; 
+    list-style: none;
 }
 
 nav ul li a
@@ -48,6 +48,4 @@ nav ul li a
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-
-    
 }
