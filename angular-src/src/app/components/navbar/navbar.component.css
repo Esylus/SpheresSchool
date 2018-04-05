@@ -1,18 +1,17 @@
-@font-face{                            /* load font for use */
-    font-family: kouskFont;
-    src: url("../../../assets/fonts/CurlyStars.ttf");
-}
+
 
 /* make navbar overlay bg image */
-nav.navbar {                                     
-    background-color: transparent;
-    position: fixed;
+nav.navbar {
+
+    position: sticky;  
     width: 100%;
+    /* top: 0;
+    margin-top: -80px; */
 }
 
 /* background of dropdowns  */
 .navbar-nav > li > .dropdown-menu {
-     background-color: transparent; 
+     background-color: transparent;
     }
 
 /* make nav items white */
@@ -34,8 +33,8 @@ nav.navbar {
     color: rgb(255, 255, 255);
     font-family: kouskFont, sans-serif;
     font-size: 130%;
-    background-color:transparent; 
-    text-shadow: 3px 1px #000000; 
+    background-color:transparent;
+    text-shadow: 3px 1px #000000;
 }
 
 /* make dropdown nav items white */
@@ -52,76 +51,16 @@ nav.navbar {
     background-color:transparent;
 }
 
-
 /* change hamburger button border color */
 button.navbar-toggler{
     border-color: rgb(251, 251, 251);
-    box-shadow: 2px 1px #000000; 
+    box-shadow: 2px 1px #000000;
+  }
+
+  /* change hamburger button border color HOVER */
+button.navbar-toggler:hover{
+    border-color: rgb(251, 251, 251);
   }
 
 
 
-
-
-/* .dropdown-item{
-    color: white;
-}
-
-.nav-link {
-    color: white;
-}
-
-.navbar-toggler {
-    color: white;
-} */
-/* nav
-{
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background: rgba(0, 0, 0, 0);
-    padding: 0 100px;
-    box-sizing: border-box;
-}
-
-nav .brand
-{
-    float: left;
-    height: 100%;
-    line-height: 70px;
-}
-
-nav .brand h2
-{
-    margin: 0;
-    padding: 0;
-    color: #fff;
-}
-
-nav ul
-{
-    float: right;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li
-{
-    list-style: none;
-}
-
-nav ul li a
-{
-    position: relative;
-    display: block;
-    height: 70px;
-    line-height: 70px;
-    padding : 0 10px;
-    box-sizing: border-box;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-} */

@@ -1,10 +1,317 @@
 
-.bgHome 
-{
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    background: url('../../../assets/images/home.jpg')  no-repeat 50% 50%;
-    background-size: cover;
+.white{
+	background-color: white;
 }
+
+.padding {
+	padding-bottom: 4rem;
+  }
+
+
+.bgHome{
+	background: url('../../../assets/images/home.jpg') no-repeat center center fixed;
+	display: table;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	z-index: -1;
+}
+
+.bgHome:before{
+	content: '';
+	background: url('../../../assets/images/home.jpg') no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background-size: cover; 
+	z-index: -1;
+}
+
+
+/* Style caption sitting directly in the center */
+.landing-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+
+  }
+
+/* Main Spheres heading */
+.landing-text h1 {
+	font-size: 900%;
+	text-shadow: 7px 2px 6px #000000;       /*Shadow is 1px horz, 1px vert, 10px width, color black*/
+	color: #FFF;
+	margin-top: -250px;
+	
+}
+
+  /* School Of Music heading */
+  .landing-text h3 {
+	font-size: 300%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #000000;
+	color: #FFF;
+	padding-top: 20px;
+	padding-bottom: 30px;
+
+
+  }
+
+  /* Lessons individually designed..  heading */
+	.landing-text h4 {
+	font-size: 200%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #000000;
+	color: #FFF;
+}
+
+  /* Main button primary - ADJUST ME WITH COOL COLOR */
+  .btn-primary {
+	color: #000000;
+	background-color: #FFF;
+	border: 1px solid rgb(26, 26, 26);
+  }
+
+  /* Main button primary HOVER - ADJUST ME WITH COOL COLOR */
+  .btn-primary:hover {
+	background-color: #2a838f;
+	border: 1px solid #563d7c;
+  }
+
+  /*------------------------------------ JumboTron Section----------------------- */
+
+  /* Jumbotron */
+.jumbotron {
+	padding: 1rem;
+	border-radius: 0;                              /*Remove default jumbotron padding*/
+	margin-bottom: 0px;                            /* Removes small parralax gap */
+}
+
+  .jumbotron h6 {
+	padding-top: 1%;
+	font-size: 150%;
+	font-weight: 500;
+	color: #000;
+ }
+
+ 
+
+
+/*----------------------------------------Welcome Section--------------------------*/
+
+  /* Welcome section */
+.welcome {
+ width: 75%;
+	margin: 0 auto; 
+	padding-top: 4rem;
+  }
+
+  /* Welcome horizontal line */
+.welcome hr {
+	border-top: 2px solid #000;
+	width: 95%; 
+	margin-top: .3rem;
+	margin-bottom: 1rem; 
+  }
+
+ /* Welcome heading */
+.welcome h2 {
+	font-size: 600%;
+	font-weight: 500;
+	color: #000;
+ }
+  /* Welcome sub heading */
+.welcome h6 {
+	font-size: 200%;
+	font-weight: 500;
+	color: #000;
+ }
+
+ /*------------------------------------------Audio Icons -----------------------------*/
+
+ /* 3 Column Section Icons*/
+.fa-music{
+	color: #e54d26;
+  }
+  .fa-headphones{
+	color: #563d7c;
+  }
+  .fa-microphone{
+	color: #2163af;
+  }
+  .fa-music, .fa-headphones, .fa-microphone {
+	font-size: 8em;
+	padding-top: 18px;
+  }
+
+/* Icons sub heading */
+.icons h5 {
+	padding-top: 1em;
+	font-size: 220%;
+	font-weight: 500;
+	color: #000;
+ }
+
+.icons h6 {
+	font-size: 170%;
+	font-weight: 500;
+	color: #000;
+ }
+
+/* ---------------------------------------------- Fixed-image-scolling------------------------------- */
+
+.fixed
+{
+	background: url('../../../assets/images/about.jpg')  no-repeat center center fixed;
+  width: 100%;
+  height: 30vh;
+	box-sizing: border-box;
+	position: relative;
+	display: table;
+	background-size: cover;
+	margin-bottom: -16px;
+}
+
+
+/*----------------------------------------------- Logo 2 Part Section---------------------------------- */
+
+.logo{
+	padding-top: 75px;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: -50px;                              /* Removes small parralax gap */
+}
+
+#sphereslogo {
+	width: 300px;
+	padding-top: 40px;
+}
+
+.logo p {
+	font-size: 150%;
+	font-weight: 500;
+	color: #000;
+}
+
+/*----------------------------------------------- Social Media Connect Section --------------------------*/
+
+ /* Connect heading */
+ .connect h2 {
+	font-size: 600%;
+	font-weight: 500;
+	color: #000;
+	padding: 3rem;
+ }
+
+  /* Welcome horizontal line */
+	.my-4 {
+		border-top: 2px solid #000;
+		width: 95%; 
+		margin-top: .3rem;
+		margin-bottom: 1rem; 
+		}
+
+.social a {
+	font-size: 5.5em;
+	padding : 3.5rem;
+  }
+
+  .fa-facebook{
+	color: #3b5998;
+  }
+  .fa-twitter{
+	color: #00aced;
+  }
+  .fa-google-plus-g{
+	color: #dd4b39;
+  }
+  .fa-instagram{
+	color: #517fa8;
+  }
+  .fa-youtube{
+	color: #bb0000;
+  }
+
+  .fa-facebook:hover,
+  .fa-twitter:hover,
+  .fa-google-plus-g:hover,
+  .fa-instagram:hover,
+  .fa-youtube:hover {
+	color: #d5d5d5;
+  }
+
+
+
+/*-------------------------------------------------- Footer Section--------------------------------------- */
+
+footer{
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	padding-top: 2rem;
+  }
+
+
+hr.light {
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+	margin-top: 0.8rem;
+	margin-bottom: 1rem;
+ }
+
+hr.light-100 {
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+	margin-top: 0.8rem;
+	margin-bottom: 1rem;
+}
+
+.footertext p {
+	font-size: 130%;
+	font-weight: 500;
+	color: #FFF;
+}
+
+.footertext h5 {
+	font-size: 200%;
+	font-weight: 500;
+	color: #FFF;
+}
+
+/* Footer copyright line */
+footer a {
+	color: d5d5d5;             /* to keep same color since phone numbers show up as blue*/
+}
+
+#copyright {
+	padding-top: 30px;
+}
+
+
+/* -----------------------------------Responsive Media Queries-------------------------------------------- */
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+	/* Main Spheres heading */
+		.landing-text h1 {
+		font-size: 600%;
+	}
+
+}
+
+@media (max-width: 576px) {
+
+
+}
+
+
+/* -----------------------------------Test buddies code-------------------------------------------------------- */
+
+
+
 
