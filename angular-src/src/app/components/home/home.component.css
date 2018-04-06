@@ -1,12 +1,13 @@
-
+/* -----------------------------------Globals-------------------- */
 .white{
 	background-color: white;
 }
 
 .padding {
 	padding-bottom: 4rem;
-  }
+}
 
+/* -------------------------------------Hero---------- */
 
 .bgHome{
 	background: url('../../../assets/images/home.jpg') no-repeat center center fixed;
@@ -30,13 +31,11 @@
 	z-index: -1;
 }
 
-
 /* Style caption sitting directly in the center */
 .landing-text {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-
   }
 
 /* Main Spheres heading */
@@ -44,8 +43,7 @@
 	font-size: 900%;
 	text-shadow: 7px 2px 6px #000000;       /*Shadow is 1px horz, 1px vert, 10px width, color black*/
 	color: #FFF;
-	margin-top: -250px;
-	
+	margin-top: -150px;
 }
 
   /* School Of Music heading */
@@ -56,30 +54,12 @@
 	color: #FFF;
 	padding-top: 20px;
 	padding-bottom: 30px;
-
-
   }
 
-  /* Lessons individually designed..  heading */
-	.landing-text h4 {
-	font-size: 200%;
-	font-weight: 500;
-	text-shadow: 7px 2px 6px #000000;
-	color: #FFF;
+	#herologo {
+	width: 250px;
 }
 
-  /* Main button primary - ADJUST ME WITH COOL COLOR */
-  .btn-primary {
-	color: #000000;
-	background-color: #FFF;
-	border: 1px solid rgb(26, 26, 26);
-  }
-
-  /* Main button primary HOVER - ADJUST ME WITH COOL COLOR */
-  .btn-primary:hover {
-	background-color: #2a838f;
-	border: 1px solid #563d7c;
-  }
 
   /*------------------------------------ JumboTron Section----------------------- */
 
@@ -97,9 +77,19 @@
 	color: #000;
  }
 
+ /* Contact us button */
+ .btn-primary {
+	color: #000000;
+	background-color: #FFF;
+	border: 1px solid rgb(26, 26, 26);
+	}
+	
+	/* Contact us HOVER */
+	.btn-primary:hover {
+	background-color: #aee69d;
+	border: 1px solid #563d7c;
+	}
  
-
-
 /*----------------------------------------Welcome Section--------------------------*/
 
   /* Welcome section */
@@ -145,6 +135,12 @@
   .fa-music, .fa-headphones, .fa-microphone {
 	font-size: 8em;
 	padding-top: 18px;
+  }
+
+  .fa-music:hover,
+  .fa-headphones:hover,
+  .fa-microphone:hover {
+	color: #d5d5d5;
   }
 
 /* Icons sub heading */
@@ -310,7 +306,6 @@ footer a {
 }
 
 
-/* -----------------------------------Test buddies code-------------------------------------------------------- */
 
 
 
