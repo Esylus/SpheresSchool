@@ -1,14 +1,252 @@
 
-
+.padding {
+	padding-bottom: 4rem;
+}
 
 /* Stationary Hero Section */
-.bgProd 
+.bgProduct
 {
-    background: url('../../../assets/images/production.jpg')  no-repeat 50% 50%;
+    background: url('../../../assets/images/ableton.png')  no-repeat 50% 50%;
     box-sizing: border-box; 
+    display: table;
     position: relative;
     height: 100vh;
     width: 100%;
     background-size: cover;
     margin-top: -80px;
 }
+
+/* Style caption sitting directly in the center */
+.landing-text {
+    display: table-cell;
+	/* text-align: center; */
+    vertical-align: middle;
+    padding-left: 16%;
+  }
+
+/* Main Spheres heading */
+.landing-text h1 {
+    font-size: 900%;
+	text-shadow: 7px 2px 6px #000;    
+	color: #FFF;
+	margin-top: -250px;
+}
+
+  /* School Of Music heading */
+  .landing-text h3 {
+	font-size: 350%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #000;
+	color: #FFF;
+  }
+
+  /*------------------------------------ JumboTron Section----------------------- */
+
+  /* Jumbotron */
+  .jumbotron {
+	padding: 1rem;
+	border-radius: 0;                              /*Remove default jumbotron padding*/
+	margin-bottom: 50px;                            /* Removes small parralax gap */
+}
+
+  .jumbotron h6 {
+	padding-top: 1%;
+	font-size: 150%;
+	font-weight: 500;
+	color: #000;
+ }
+
+ /* Contact us button */
+   .btn-primary {
+	color: #000000;
+	background-color: #FFF;
+	border: 1px solid rgb(26, 26, 26);
+	}
+	
+	/* Contact us HOVER */
+	.btn-primary:hover {
+	background-color: #3390bb;
+	border: 1px solid #563d7c;
+	}
+ 
+
+        /*----------------------------------------------- Logo 2 Part Section---------------------------------- */
+
+/* Global Container Size and Alignment   */
+.product{
+	padding-top: 75px;
+	text-align: center;
+    vertical-align: middle;                      
+}
+
+/* Global Heading horizontal line */
+.product hr {
+    border-top: 2px solid #000;
+    width: 50%; 
+  }
+
+
+ /* Global Production heading */
+ .product h2 {
+	font-size: 300%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #FFF;
+	color: #000;
+  }
+
+.product p {
+	font-size: 150%;
+	font-weight: 500;
+	color: #000;
+}
+
+/*-------------------------------------------------- Global Black Container Size and Alignment   */
+.bgBlack{
+	padding-top: 75px;
+	text-align: center;
+    vertical-align: middle; 
+    background-color: #000;                     
+}
+
+/* Global Heading horizontal line */
+.bgBlack hr {
+    border-top: 2px solid #FFF;
+    width: 50%; 
+  }
+
+
+ /* Global Production heading */
+ .bgBlack h2 {
+	font-size: 300%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #000;
+	color: #FFF;
+  }
+
+.bgBlack p {
+	font-size: 150%;
+    font-weight: 500;
+	text-shadow: 7px 2px 6px #000;    
+	color: #FFF;
+}
+
+.bgBlack h5 {
+	font-size: 150%;
+	font-weight: 500;
+    color: #FFF;
+    margin-top: 10px;
+  }
+
+
+/* -------------------------------------------------------------Global WHITE Container Size and Alignment   */
+.bgWhite{
+	padding-top: 75px;
+	text-align: center;
+    vertical-align: middle;                      
+}
+
+/* Global Heading horizontal line */
+.bgWhite hr {
+    border-top: 2px solid #000;
+    width: 50%; 
+  }
+
+
+ /* Global Production heading */
+ .bgWhite h2 {
+	font-size: 300%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #FFF;
+	color: #000;
+  }
+
+.bgWhite p {
+	font-size: 150%;
+    font-weight: 500;
+	text-shadow: 7px 2px 6px #FFF;    
+	color: #000;
+}
+
+.bgWhite h5 {
+	font-size: 150%;
+	font-weight: 500;
+    color: #000;
+    margin-top: 10px;
+  }
+
+
+/* Dropdown Section */
+/* Global Space below button and dropdown */
+.padBelow {
+    margin-bottom: 2rem;
+  }
+  
+  /* Dropdown thumbnails */
+  .thumbnail {
+    max-width: 100%;
+  }
+  
+/* Specific images */
+  #serum {
+	width: 400px;
+}
+
+  #kick {
+	width: 500px;
+}
+
+  #composing {
+	width: 450px;
+}
+
+  #abletonMix {
+	width: 450px;
+}
+
+
+
+
+
+  /*-------------------------------------------------- Footer Section--------------------------------------- */
+
+  footer{
+    background-color: #000;
+    color: #d5d5d5;
+    padding-top: 2rem;
+    }
+  
+  
+  hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+   }
+  
+  hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footertext p {
+    font-size: 130%;
+    font-weight: 500;
+    color: #FFF;
+  }
+  
+  .footertext h5 {
+    font-size: 200%;
+    font-weight: 500;
+    color: #FFF;
+  }
+  
+  /* Footer copyright line */
+  footer a {
+    color: d5d5d5;             /* to keep same color since phone numbers show up as blue*/
+  }
+  
+  #copyright {
+    padding-top: 40px;
+  }
