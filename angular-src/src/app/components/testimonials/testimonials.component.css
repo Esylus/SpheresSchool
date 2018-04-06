@@ -1,9 +1,139 @@
 
-.bgTestimonials 
+.padding {
+	padding-bottom: 4rem;
+  }
+
+/* Parralax Hero Section */
+.bgTest 
 {
-    width: 100%;
+    background: url('../../../assets/images/testimonials.jpg')  no-repeat center center fixed;
+    display: table; 
+    position: relative;
     height: 100vh;
-    box-sizing: border-box;
-    background: url('../../../assets/images/testimonials.jpg')  no-repeat 50% 50%;
+    width: 100%;
     background-size: cover;
+    z-index: -1;
 }
+
+.bgTest:before{
+	content: '';
+	background: url('../../../assets/images/testimonials.jpg') no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background-size: cover; 
+	z-index: -1;
+}
+
+
+/* Style caption sitting directly in the center */
+.test-headline {
+  display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+  }
+
+  /* Main Spheres heading */
+.test-headline h1 {
+	font-size: 300%;
+	text-shadow: 7px 2px 6px #000000;       /*Shadow is 1px horz, 1px vert, 10px width, color black*/
+	color: #FFF;          
+    padding-bottom: 20px;
+    margin-top: -100px;
+	
+}
+
+  /* School Of Music heading */
+  .test-headline h3 {
+	font-size: 150%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #000000;
+	color: #FFF;
+	padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  /* About blurk */
+  .test-headline h6 {
+    font-size: 200%;
+    font-weight: 500;
+    color: #FFF;
+    text-shadow: 7px 2px 6px #000000; 
+ }
+
+/*----------------------------------------About the School Section--------------------------*/
+
+  /* About blurb container */
+  .test {
+    width: 60%;
+    margin: 0 auto; 
+    padding-top: 4rem;
+  }
+
+  /* Welcome horizontal line */
+.test hr {
+    border-top: 2px solid #FFF;
+    width: 95%; 
+    margin-top: 3rem;
+    margin-bottom: 1rem; 
+  }
+
+ /* About heading */ 
+.test h2 {
+    font-size: 600%;
+    font-weight: 500;
+    color: #FFF;
+ }
+  /* About blurk */
+.test h6 {
+    font-size: 200%;
+    font-weight: 500;
+    color: #FFF;
+    text-shadow: 7px 2px 6px #000000; 
+ }
+
+    /*-------------------------------------------------- Footer Section--------------------------------------- */
+
+    footer{
+      background-color: #3f3f3f;
+      color: #d5d5d5;
+      padding-top: 2rem;
+      }
+    
+    
+    hr.light {
+      border-top: 1px solid #d5d5d5;
+      width: 75%;
+      margin-top: 0.8rem;
+      margin-bottom: 1rem;
+     }
+    
+    hr.light-100 {
+      border-top: 1px solid #d5d5d5;
+      width: 100%;
+      margin-top: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    
+    .footertext p {
+      font-size: 130%;
+      font-weight: 500;
+      color: #FFF;
+    }
+    
+    .footertext h5 {
+      font-size: 200%;
+      font-weight: 500;
+      color: #FFF;
+    }
+    
+    /* Footer copyright line */
+    footer a {
+      color: d5d5d5;             /* to keep same color since phone numbers show up as blue*/
+    }
+    
+    #copyright {
+      padding-top: 40px;
+    }

@@ -1,9 +1,14 @@
 
-.bgProduction 
+
+
+/* Stationary Hero Section */
+.bgProd 
 {
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
     background: url('../../../assets/images/production.jpg')  no-repeat 50% 50%;
+    box-sizing: border-box; 
+    position: relative;
+    height: 100vh;
+    width: 100%;
     background-size: cover;
+    margin-top: -80px;
 }

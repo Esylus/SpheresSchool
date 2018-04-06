@@ -1,28 +1,39 @@
 
+
+.white{
+	background-color: white;
+}
+
 .padding {
 	padding-bottom: 4rem;
   }
 
-/* Stationary Hero Section */
+
+
+/* Parralax Hero Section */
 .bgAbout 
 {
-    background: url('../../../assets/images/about.jpg')  no-repeat 50% 50%;
-    box-sizing: border-box; 
+    background: url('../../../assets/images/about.jpg')  no-repeat center center fixed;
+    display: table; 
     position: relative;
     height: 100vh;
     width: 100%;
     background-size: cover;
+    z-index: -1;
 }
 
-/* Parralax Hero Section */
-/* .bgAbout{
-	background: url('../../../assets/images/about.jpg') no-repeat center center fixed;
-	display: table;
-	position: relative;
+.bgAbout:before{
+	content: '';
+	background: url('../../../assets/images/about.jpg') no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
 	height: 100vh;
 	width: 100%;
-  background-size: cover;
-} */
+	background-size: cover; 
+	z-index: -1;
+}
+
 
 /* Style caption sitting directly in the center */
 .about-headline {
@@ -48,8 +59,6 @@
 	color: #FFF;
 	padding-top: 20px;
 	padding-bottom: 30px;
-
-
   }
 
 
@@ -67,7 +76,7 @@
   }
 
 
-/*----------------------------------------About the School Section--------------------------*/
+/*----------------------------------------Our Purpose Section--------------------------*/
 
   /* About blurb container */
   .about {
@@ -86,11 +95,12 @@
    
     /* About heading */
    .about h2 {
-       font-size: 600%;
+       font-size: 400%;
        font-weight: 500;
        color: #000;
     }
-     /* About blurk */
+
+     /* About blurb */
    .about h6 {
        font-size: 200%;
        font-weight: 500;
@@ -98,7 +108,14 @@
     }
    
 
-    
+
+    /* Meet heading */
+   .meet h2 {
+    font-size: 400%;
+    font-weight: 500;
+    color: #FFF;
+    margin-top: 40px;
+ }
 
     /*-------------------------------------------------- Footer Section--------------------------------------- */
 
