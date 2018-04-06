@@ -117,46 +117,4 @@
     margin-top: 40px;
  }
 
-    /*-------------------------------------------------- Footer Section--------------------------------------- */
-
-footer{
-	background-color: #3f3f3f;
-	color: #d5d5d5;
-	padding-top: 2rem;
-  }
-
-
-hr.light {
-	border-top: 1px solid #d5d5d5;
-	width: 75%;
-	margin-top: 0.8rem;
-	margin-bottom: 1rem;
- }
-
-hr.light-100 {
-	border-top: 1px solid #d5d5d5;
-	width: 100%;
-	margin-top: 0.8rem;
-	margin-bottom: 1rem;
-}
-
-.footertext p {
-	font-size: 130%;
-	font-weight: 500;
-	color: #FFF;
-}
-
-.footertext h5 {
-	font-size: 200%;
-	font-weight: 500;
-	color: #FFF;
-}
-
-/* Footer copyright line */
-footer a {
-	color: d5d5d5;             /* to keep same color since phone numbers show up as blue*/
-}
-
-#copyright {
-	padding-top: 40px;
-}
+ 
