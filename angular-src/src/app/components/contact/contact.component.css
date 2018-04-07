@@ -3,7 +3,6 @@
 {
     background: url('../../../assets/images/contact.jpg')  no-repeat 50% 50%;
     box-sizing: border-box; 
-    display: table;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -13,9 +12,9 @@
 
 /* Style caption sitting directly in the center */
 .landing-text {
-    display: table-cell;
-	text-align: center;
-    vertical-align: middle;
+
+	/* text-align: center;
+    vertical-align: middle; */
 
   }
 
@@ -32,5 +31,127 @@
 	font-size: 350%;
 	font-weight: 500;
 	text-shadow: 7px 2px 6px #000;
-	color: #FFF;
+    color: #FFF;
+    text-align: center;
+    margin-top: 210px;
+    margin-left: -60px;
   }
+
+
+  /* -----------------------------------Contact Form----------------------------- */
+
+  .main-section{
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: -30px;
+    padding: 0;
+}
+
+
+/* Main container */
+.modal-content {
+    background-color: #3b4652;
+    opacity: 0.95;
+    padding: 0 18px;
+    box-shadow: 0px 0px 3px #848484; 
+}
+
+/* Spheres Logo Container */
+.user-img {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* Spheres Logo */
+.user-img img {
+    height: 175px;
+    width: 175px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 5px #FFF;  */
+}
+
+/* Spacing between inputs */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Input shaping */
+.form-group input {
+    height: 42px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    padding-left: 54px;
+}
+
+/* Textbox shaping */
+.form-group textarea {
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    padding-left: 54px;
+}
+
+.form-group::before{
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f007";
+    position: absolute;
+    font-size: 22px;
+    color: #555e60;
+    left: 28px;
+    padding-top: 4px;
+}
+
+/* Email */
+.form-group:nth-child(2)::before {
+    content: "\f0e0";
+}
+
+/* Phone */
+.form-group:nth-child(3)::before {
+    content: "\f3cd";
+}
+
+/* Message */
+.form-group:last-of-type::before {
+    content: "\f11c";
+}
+
+button {
+    width: 40%;
+    margin: 5px 0 25px;
+}
+
+.btn {
+    background-color: #27c2a5;
+    color: #fff;
+    font-size: 19px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border-bottom: 4px solid #219882;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #25a890 !important;
+    border-bottom: 4px solid #25a890;
+}
+
+.svg-inline--fa {
+    font-size: 20px;
+    margin-right: 7px;   
+}
+
+.forgot {
+    padding: 5px 0 25px;
+}
+
+.forgot a {
+    color: #c2fbfe;
+}
+
+.response p {
+	font-size: 100%;
+    font-weight: 500;
+	text-shadow: 7px 2px 6px #000;    
+	color: #FFF;
+}
