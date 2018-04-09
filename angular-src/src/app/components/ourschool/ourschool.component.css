@@ -58,9 +58,14 @@
 	text-shadow: 7px 2px 6px #000000;
 	color: #FFF;
 	padding-top: 20px;
-	padding-bottom: 30px;
+
   }
 
+
+	#herologo {
+    width: 80%;
+    margin: -20px;
+  }
 
   /* Main button primary - ADJUST ME WITH COOL COLOR */
   .btn-primary {

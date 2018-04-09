@@ -86,7 +86,7 @@
 	
 	/* Contact us HOVER */
 	.btn-primary:hover {
-	background-color: #aee69d;
+	background-color: #4b9b30;
 	border: 1px solid #563d7c;
 	}
  
@@ -124,7 +124,7 @@
 
  /* 3 Column Section Icons*/
 .fa-music{
-	color: #e54d26;
+	color: #0d5f13;
   }
   .fa-headphones{
 	color: #563d7c;
@@ -181,9 +181,12 @@
 	margin-bottom: -50px;                              /* Removes small parralax gap */
 }
 
+/* logo h2{
+	text-decoration-line: underline;
+} */
+
 #sphereslogo {
 	width: 300px;
-	padding-top: 40px;
 }
 
 .logo p {
@@ -298,10 +301,19 @@ footer a {
 		font-size: 600%;
 	}
 
+	#sphereslogo {
+		padding-top: 40px;
+	
+	}
+
+
 }
 
 @media (max-width: 576px) {
 
+	#sphereslogo {
+		padding-top: 40px;
+	}
 
 }
 
