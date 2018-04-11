@@ -5,7 +5,7 @@
 
 /* Images in carousel - take up full screen with full image */
 .carousel-inner  {
-    margin-top: -80px;
+    /* margin-top: -80px; */
   }
   
 /* Stationary Hero Section */
@@ -88,15 +88,12 @@
     /*----------------------------------------------- Logo 2 Part Section---------------------------------- */
 
 .performdetail{
-	padding-top: 75px;
 	text-align: center;
 	vertical-align: middle;
-	margin-bottom: -50px;                              /* Removes small parralax gap */
 }
 
-#sphereslogo {
-	width: 300px;
-	padding-top: 40px;
+#makemusic {
+	
 }
 
 .performdetail p {
@@ -105,46 +102,17 @@
 	color: #000;
 }
 
-  /*-------------------------------------------------- Footer Section--------------------------------------- */
 
-  footer{
-    background-color: #000;
-    color: #d5d5d5;
-    padding-top: 2rem;
-    }
-  
-  
-  hr.light {
-    border-top: 1px solid #d5d5d5;
-    width: 75%;
-    margin-top: 0.8rem;
-    margin-bottom: 1rem;
-   }
-  
-  hr.light-100 {
-    border-top: 1px solid #d5d5d5;
-    width: 100%;
-    margin-top: 0.8rem;
-    margin-bottom: 1rem;
-  }
-  
-  .footertext p {
-    font-size: 130%;
-    font-weight: 500;
-    color: #FFF;
-  }
-  
-  .footertext h5 {
-    font-size: 200%;
-    font-weight: 500;
-    color: #FFF;
-  }
-  
-  /* Footer copyright line */
-  footer a {
-    color: d5d5d5;             /* to keep same color since phone numbers show up as blue*/
-  }
-  
-  #copyright {
-    padding-top: 40px;
-  }
+  /*-------------------------------------------Media Queries ---------------------------*/
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}  

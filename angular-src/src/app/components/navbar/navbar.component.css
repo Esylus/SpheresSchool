@@ -2,109 +2,79 @@
 
 /* make navbar overlay bg image */
 nav.navbar {
+width: 100%;
+background-color: black;
+border-bottom: 1px solid #FFF;
+}
 
-    position: sticky;  
-    width: 100%;
-    /* top: 0;
-    margin-top: -80px; */
+/* make navbar overlay bg image */
+a {
+font-size: 150%;
+}
+
+#whitelogo{
+width: 50px;
+margin-left: 5%;
 }
 
 /* background of dropdowns  */
 .navbar-nav > li > .dropdown-menu {
-     background-color: transparent;
-    }
-
+background-color: #000;
+}
 
 /* make nav items white */
 .navbar .nav-item .nav-link{
-    color: rgb(255, 255, 255);
-    font-family: kouskFont, sans-serif;
-    font-size: 180%;
-    text-shadow: 3px 1px #000000;
-    padding-left: 15px;
+color: rgb(255, 255, 255);
+font-family: kouskFont, sans-serif;
+font-size: 180%;
+text-shadow: 3px 1px #000000;
+padding-left: 15px;
 }
 
 /* make nav items white HOVER */
 .navbar .nav-item .nav-link:hover{
-    color: rgb(239, 245, 238);
+color: rgb(104, 104, 104);
 }
 
 /* make dropdown nav items white */
 .dropdown-menu .dropdown-item{
-    color: rgb(255, 255, 255);
-    font-family: kouskFont, sans-serif;
-    font-size: 130%;
-    background-color: transparent;
-    text-shadow: 3px 1px #000000;
+color: rgb(255, 255, 255);
+font-family: kouskFont, sans-serif;
+font-size: 160%;
+background-color:black;
+text-shadow: 3px 1px #000000;
 }
 
 /* make dropdown nav items white */
-.dropdown-menu .dropdown-item:hover{
-    color: rgb(239, 245, 238);
+.dropdown-menu .dropdown-item{
+color: rgb(255, 255, 255);
+font-family: kouskFont, sans-serif;
+font-size: 160%;
+background-color: transparent;
+text-shadow: 3px 1px #000000;
 }
 
+/*  */
 .dropdown-menu {
-    border: 5px;
+border: 5px;
 }
 
 /* Dropdown hover  */
 .dropdown-menu .dropdown-item:hover{
-    background-color:transparent;
+background-color:transparent;
+color: rgb(239, 245, 238);
 }
 
 /* change hamburger button border color */
 button.navbar-toggler{
-    border-color: rgb(251, 251, 251);
-    box-shadow: 2px 1px #000000;
-  }
+border-color: rgb(251, 251, 251);
+box-shadow: 2px 1px #000000;
+}
 
-  /* change hamburger button border color HOVER */
+/* change hamburger button border color HOVER */
 button.navbar-toggler:hover{
-    border-color: rgb(251, 251, 251);
-  }
-
-
-   /*-------------------------------------------------- Footer Section--------------------------------------- */
-
-   footer{
-	background-color: #000;
-	color: #d5d5d5;
-	padding-top: 2rem;
-  }
-
- 
-hr.light {
-	border-top: 1px solid #d5d5d5;
-	width: 75%;
-	margin-top: 0.8rem;
-	margin-bottom: 1rem;
- }
-
-hr.light-100 {
-	border-top: 1px solid #d5d5d5;
-	width: 100%;
-	margin-top: 0.8rem;
-	margin-bottom: 1rem;
+border-color: rgb(251, 251, 251);
 }
 
-.footertext p {
-	font-size: 130%;
-	font-weight: 500;
-	color: #FFF;
-}
 
-.footertext h5 {
-	font-size: 200%;
-	font-weight: 500;
-	color: #FFF;
-}
-
-/* Footer copyright line */
-footer a {
-	color: d5d5d5;             /* to keep same color since phone numbers show up as blue*/
-}
-
-#copyright {
-	padding-top: 40px;
-}
 

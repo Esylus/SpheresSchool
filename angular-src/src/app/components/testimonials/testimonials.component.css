@@ -3,7 +3,7 @@
 	padding-bottom: 4rem;
   }
 
-/* Parralax Hero Section */
+/*--------------------------------- Background Imaginig Hero Section */
 .bgTest 
 {
     background: url('../../../assets/images/testimonials.jpg')  no-repeat center center fixed;
@@ -27,52 +27,66 @@
 	z-index: -1;
 }
 
-
+/* ----------------------------------------------Intro */
 /* Style caption sitting directly in the center */
 .test-headline {
   display: table-cell;
 	text-align: center;
-	vertical-align: middle;
+  vertical-align: middle;
   }
 
-  /* Main Spheres heading */
+  /* Main heading */
 .test-headline h1 {
-	font-size: 300%;
-	text-shadow: 7px 2px 6px #000000;       /*Shadow is 1px horz, 1px vert, 10px width, color black*/
+	font-size: 600%;
+	text-shadow: 2px 2px 3px #3D8103;       /*Shadow is 1px horz, 1px vert, 10px width, color black*/
 	color: #FFF;          
-    padding-bottom: 20px;
-    margin-top: -100px;
-	
+  padding-bottom: 50px;	
 }
 
-  /* School Of Music heading */
-  .test-headline h3 {
-	font-size: 150%;
-	font-weight: 500;
-	text-shadow: 7px 2px 6px #000000;
-	color: #FFF;
-	padding-top: 10px;
-    padding-left: 50px;
-  }
-
-  /* About blurk */
-  .test-headline h6 {
+  /* Sub headings */
+  .test-headline h5 {
     font-size: 200%;
     font-weight: 500;
     color: #FFF;
-    text-shadow: 7px 2px 6px #000000; 
+    text-shadow: 1px 1px 3px #3D8103; 
  }
 
-/*----------------------------------------About the School Section--------------------------*/
+/* -----------------------------------------------Animation */
+/* Main Name Animation */
+#whyStudy {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+}
+#quote1 {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+}
+#quote2 {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 4s;
+}
+#quote3 {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 5s;
+}
+#quote4 {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 6s;
+}
+#quote5 {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 7s;
+}
+/*----------------------------------------Testimonial Section--------------------------*/
 
-  /* About blurb container */
+  /* Review blurb containers */
   .test {
     width: 60%;
     margin: 0 auto; 
     padding-top: 4rem;
   }
 
-  /* Welcome horizontal line */
+  /* Testimonial horizontal line */
 .test hr {
     border-top: 2px solid #FFF;
     width: 95%; 
@@ -80,60 +94,34 @@
     margin-bottom: 1rem; 
   }
 
- /* About heading */ 
+ /* Testimonial heading */ 
 .test h2 {
     font-size: 600%;
     font-weight: 500;
     color: #FFF;
+    text-shadow: 2px 2px 3px #3D8103; 
+    
  }
-  /* About blurk */
+  /* Testimonial blurb */
 .test h6 {
     font-size: 200%;
     font-weight: 500;
     color: #FFF;
-    text-shadow: 7px 2px 6px #000000; 
+    text-shadow: 1px 1px 3px #3D8103; 
+
  }
 
-    /*-------------------------------------------------- Footer Section--------------------------------------- */
 
-    footer{
-      background-color: #000;
-      color: #d5d5d5;
-      padding-top: 2rem;
-      }
-    
-    
-    hr.light {
-      border-top: 1px solid #d5d5d5;
-      width: 75%;
-      margin-top: 0.8rem;
-      margin-bottom: 1rem;
-     }
-    
-    hr.light-100 {
-      border-top: 1px solid #d5d5d5;
-      width: 100%;
-      margin-top: 0.8rem;
-      margin-bottom: 1rem;
-    }
-    
-    .footertext p {
-      font-size: 130%;
-      font-weight: 500;
-      color: #FFF;
-    }
-    
-    .footertext h5 {
-      font-size: 200%;
-      font-weight: 500;
-      color: #FFF;
-    }
-    
-    /* Footer copyright line */
-    footer a {
-      color: d5d5d5;             /* to keep same color since phone numbers show up as blue*/
-    }
-    
-    #copyright {
-      padding-top: 40px;
-    }
+    /*-------------------------------------------Media Queries ---------------------------*/
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

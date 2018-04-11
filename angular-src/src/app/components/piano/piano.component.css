@@ -4,8 +4,7 @@
 }
 
 /* Stationary Hero Section */
-.bgPiano
-{
+.bgPiano {
     background: url('../../../assets/images/piano.jpg')  no-repeat 50% 50%;
     box-sizing: border-box; 
     display: table;
@@ -13,16 +12,15 @@
     height: 100vh;
     width: 100%;
     background-size: cover;
-    margin-top: -80px;
+    /* margin-top: -80px; */
 }
 
 /* Style caption sitting directly in the center */
 .landing-text {
-    display: table-cell;
-	/* text-align: center; */
-    vertical-align: middle;
-    padding-left: 20%;
-  }
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20%;
+}
 
 /* Main Spheres heading */
 .landing-text h1 {
@@ -35,32 +33,22 @@
   /* School Of Music heading */
   .landing-text h3 {
 	font-size: 300%;
-	font-weight: 500;
+  font-weight: 500;
+  letter-spacing: 2px; 
 	text-shadow: 7px 2px 6px #000;
 	color: #FFF;
   }
 
-  /*------------------------------------ JumboTron Section----------------------- */
-
-  /* Jumbotron */
-  .jumbotron {
-	padding: 1rem;
-	border-radius: 0;                              /*Remove default jumbotron padding*/
-	margin-bottom: 0px;                            /* Removes small parralax gap */
+  /* To place contact button perfectly on hero */
+.btnContact{
+  padding-left: 10%;
 }
 
-  .jumbotron h6 {
-	padding-top: 1%;
-	font-size: 150%;
-	font-weight: 500;
-	color: #000;
- }
-
- /* Contact us button */
+   /* Contact us button */
  .btn-primary {
 	color: #000000;
 	background-color: #FFF;
-	border: 1px solid rgb(26, 26, 26);
+  border: 1px solid rgb(26, 26, 26);
 	}
 	
 	/* Contact us HOVER */
@@ -68,16 +56,40 @@
 	background-color: #3390bb;
 	border: 1px solid #563d7c;
 	}
- 
+
+  /*------------------------------------ JumboTron Section----------------------- */
+
+  /* Jumbotron */
+  .jumbotron {
+	padding: 1rem;
+	border-radius: 0;                              /*Remove default jumbotron padding*/
+	margin-bottom: -65px;                            /* Removes small parralax gap */
+  background-color: #000;
+}
+
+  .jumbotron h6 {
+	padding-top: 1%;
+	font-size: 180%;
+	font-weight: 500;
+	color: #FFF;
+ }
+
     /* ---------------------------------------Piano Levels-------------------------------------- */
 
   /* Welcome horizontal line */
     .lessons hr {
     border-top: 2px solid #000;
     width: 35%; 
-
-    margin-bottom: 3rem; 
+    margin-bottom: 2rem; 
     }
+
+/* Main Spheres heading */
+h1 {
+  font-size: 400%;
+text-shadow: 7px 2px 6px #FFF;    
+color: #000;
+padding-top: 50px;
+}
 
     .piano h6 {
     padding-top: 1%;
@@ -86,48 +98,38 @@
     color: #000;
      }
 
-   /*-------------------------------------------------- Footer Section--------------------------------------- */
+.black h1 {
+  color: white;
+  text-shadow: none;
+}
 
-   footer{
-    background-color: #000;
-    color: #d5d5d5;
-    padding-top: 2rem;
-    }
+.black hr {
+  border-top: 2px solid #FFF;
   
-  
-  hr.light {
-    border-top: 1px solid #d5d5d5;
-    width: 75%;
-    margin-top: 0.8rem;
-    margin-bottom: 1rem;
-   }
-  
-  hr.light-100 {
-    border-top: 1px solid #d5d5d5;
-    width: 100%;
-    margin-top: 0.8rem;
-    margin-bottom: 1rem;
-  }
-  
-  .footertext p {
-    font-size: 130%;
-    font-weight: 500;
-    color: #FFF;
-  }
-  
-  .footertext h5 {
-    font-size: 200%;
-    font-weight: 500;
-    color: #FFF;
-  }
-  
-  /* Footer copyright line */
-  footer a {
-    color: d5d5d5;             /* to keep same color since phone numbers show up as blue*/
-  }
-  
-  #copyright {
-    padding-top: 40px;
-  }
+}
 
- 
+.black{
+  background-color: black;
+}
+
+#intermediate{
+  width: 55%;
+}
+
+#advanced{
+  width: 55%;
+}
+
+ /*-------------------------------------------Media Queries ---------------------------*/
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

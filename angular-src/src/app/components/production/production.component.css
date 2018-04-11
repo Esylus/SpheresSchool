@@ -13,23 +13,33 @@
     height: 100vh;
     width: 100%;
     background-size: cover;
-    margin-top: -80px;
+    /* margin-top: -80px; */
 }
+
+
 
 /* Style caption sitting directly in the center */
 .landing-text {
     display: table-cell;
-	/* text-align: center; */
     vertical-align: middle;
-    padding-left: 16%;
   }
+
+	/* Hero background opauge black box  */
+.frame{
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 1%;
+	margin-left: 15%;
+	margin-right: 15%;
+
+}
 
 /* Main Spheres heading */
 .landing-text h1 {
-    font-size: 900%;
+  font-size: 900%;
 	text-shadow: 7px 2px 6px #000;    
 	color: #FFF;
-	margin-top: -250px;
+	padding-top: 25px;
+
 }
 
   /* School Of Music heading */
@@ -37,8 +47,16 @@
 	font-size: 350%;
 	font-weight: 500;
 	text-shadow: 7px 2px 6px #000;
-	color: #FFF;
+	color: #FFF ;
+
+	
   }
+
+  /* To place contact button perfectly on hero */
+	.btnSignUp{
+		padding-top: 10px;
+		padding-bottom: 35px;
+	}
 
   /*------------------------------------ JumboTron Section----------------------- */
 
@@ -47,13 +65,14 @@
 	padding: 1rem;
 	border-radius: 0;                              /*Remove default jumbotron padding*/
 	margin-bottom: 50px;                            /* Removes small parralax gap */
+	background-color: #000;
 }
 
   .jumbotron h6 {
 	padding-top: 1%;
-	font-size: 150%;
+	font-size: 175%;
 	font-weight: 500;
-	color: #000;
+	color: #FFF;
  }
 
  /* Contact us button */
@@ -207,46 +226,16 @@
 
 
 
-  /*-------------------------------------------------- Footer Section--------------------------------------- */
+  /*-------------------------------------------Media Queries ---------------------------*/
 
-  footer{
-    background-color: #000;
-    color: #d5d5d5;
-    padding-top: 2rem;
-    }
-  
-  
-  hr.light {
-    border-top: 1px solid #d5d5d5;
-    width: 75%;
-    margin-top: 0.8rem;
-    margin-bottom: 1rem;
-   }
-  
-  hr.light-100 {
-    border-top: 1px solid #d5d5d5;
-    width: 100%;
-    margin-top: 0.8rem;
-    margin-bottom: 1rem;
-  }
-  
-  .footertext p {
-    font-size: 130%;
-    font-weight: 500;
-    color: #FFF;
-  }
-  
-  .footertext h5 {
-    font-size: 200%;
-    font-weight: 500;
-    color: #FFF;
-  }
-  
-  /* Footer copyright line */
-  footer a {
-    color: d5d5d5;             /* to keep same color since phone numbers show up as blue*/
-  }
-  
-  #copyright {
-    padding-top: 40px;
-  }
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}
