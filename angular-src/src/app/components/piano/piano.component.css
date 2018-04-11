@@ -65,6 +65,7 @@
 	border-radius: 0;                              /*Remove default jumbotron padding*/
 	margin-bottom: -65px;                            /* Removes small parralax gap */
   background-color: #000;
+  border-top: 1px solid #FFF;
 }
 
   .jumbotron h6 {

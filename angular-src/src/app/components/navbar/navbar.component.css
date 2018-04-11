@@ -1,80 +1,94 @@
 
-
-/* make navbar overlay bg image */
 nav.navbar {
-width: 100%;
-background-color: black;
-border-bottom: 1px solid #FFF;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid #FFF;
 }
 
-/* make navbar overlay bg image */
-a {
-font-size: 150%;
+nav.navbar a {
+    font-size: 150%;
 }
 
 #whitelogo{
-width: 50px;
-margin-left: 5%;
+    width: 50px;
+    margin-left: 5%;
 }
 
-/* background of dropdowns  */
-.navbar-nav > li > .dropdown-menu {
-background-color: #000;
-}
-
-/* make nav items white */
+/* Style nav items */
 .navbar .nav-item .nav-link{
-color: rgb(255, 255, 255);
-font-family: kouskFont, sans-serif;
-font-size: 180%;
-text-shadow: 3px 1px #000000;
-padding-left: 15px;
+    color: rgb(255, 255, 255);
+    font-family: kouskFont, sans-serif;
+    font-size: 180%;
+    text-shadow: 3px 1px #000000;
+    padding-left: 15px;
 }
 
-/* make nav items white HOVER */
 .navbar .nav-item .nav-link:hover{
-color: rgb(104, 104, 104);
+    color: rgb(104, 104, 104);
 }
 
-/* make dropdown nav items white */
+/* Background of dropdowns  */
+.navbar-nav > li > .dropdown-menu {
+    background-color: #000;
+    border-radius: 5%;
+}
+
+/* Style dropdown nav items */
 .dropdown-menu .dropdown-item{
-color: rgb(255, 255, 255);
-font-family: kouskFont, sans-serif;
-font-size: 160%;
-background-color:black;
-text-shadow: 3px 1px #000000;
+    color: rgb(255, 255, 255);
+    font-family: kouskFont, sans-serif;
+    font-size: 160%;
+    background-color:#000;
+    text-shadow: 3px 1px #000000;
 }
 
-/* make dropdown nav items white */
-.dropdown-menu .dropdown-item{
-color: rgb(255, 255, 255);
-font-family: kouskFont, sans-serif;
-font-size: 160%;
-background-color: transparent;
-text-shadow: 3px 1px #000000;
-}
-
-/*  */
-.dropdown-menu {
-border: 5px;
-}
-
-/* Dropdown hover  */
 .dropdown-menu .dropdown-item:hover{
-background-color:transparent;
-color: rgb(239, 245, 238);
+    background-color:transparent;
+    color: rgb(104, 104, 104);
 }
 
-/* change hamburger button border color */
+/* Toggler button border color */
 button.navbar-toggler{
-border-color: rgb(251, 251, 251);
-box-shadow: 2px 1px #000000;
+    border-color: rgb(251, 251, 251);
+    box-shadow: 2px 1px #000000;
 }
 
-/* change hamburger button border color HOVER */
 button.navbar-toggler:hover{
-border-color: rgb(251, 251, 251);
+    border-color: rgb(104, 104, 104);
+    outline: none;    
 }
 
+button.navbar-toggler:focus{
+    border-color: #FFF; 
+    outline: none;  
+}
+
+
+@media (max-width: 992px) {
+   
+    /* Style nav items */
+    .navbar .nav-item .nav-link{
+        font-size: 150%;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+    /* Spheres White Logo */
+    nav.navbar a {
+        font-size: 120%;
+    }
+
+    #whitelogo{
+        width: 40px;
+        margin-left: 3%;
+    }
+
+}
 
 

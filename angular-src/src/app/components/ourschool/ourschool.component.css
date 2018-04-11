@@ -1,25 +1,21 @@
 
-
 .white{
 	background-color: white;
 }
 
 .padding {
 	padding-bottom: 4rem;
-  }
+}
 
-
-
-/* Parralax Hero Section */
-.bgAbout 
-{
-    background: url('../../../assets/images/about.jpg')  no-repeat center center fixed;
-    display: table; 
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    z-index: -1;
+/*------------------------- Parralax Hero Section */
+.bgAbout {
+  background: url('../../../assets/images/about.jpg')  no-repeat center center fixed;
+  display: table; 
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
 }
 
 .bgAbout:before{
@@ -34,101 +30,93 @@
 	z-index: -1;
 }
 
-
-/* Style caption sitting directly in the center */
-.about-headline {
+.about-hero {
+  display: table-cell;
 	text-align: center;
   vertical-align: middle;
-
-  }
-
-  /* Main Spheres heading */
-.about-headline h1 {
-	font-size: 700%;
-	text-shadow: 7px 2px 6px #000000;       /*Shadow is 1px horz, 1px vert, 10px width, color black*/
-	color: #FFF;
-  padding-top: 150px;                            /* Push down from top cause vertical-align is not working*/
-	
 }
 
-  /* School Of Music heading */
-  .about-headline h3 {
-	font-size: 300%;
-	font-weight: 500;
-	text-shadow: 7px 2px 6px #000000;
+.about-hero h1 {
+	font-size: 700%;
+	text-shadow: 7px 2px 6px #000000;       
 	color: #FFF;
-	padding-top: 20px;
+	margin-top: -40px;                       
+}
 
-  }
+.about-hero h3 {
+  font-size: 300%;
+  font-weight: 500;
+  text-shadow: 7px 2px 6px #000000;
+  color: #FFF;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
 
-
-	#herologo {
-    width: 80%;
-    margin: -20px;
-  }
-
-  /* Main button primary - ADJUST ME WITH COOL COLOR */
-  .btn-primary {
-	color: #000000;
-	background-color: #FFF;
-	border: 1px solid rgb(26, 26, 26);
-  }
-
-  /* Main button primary HOVER - ADJUST ME WITH COOL COLOR */
-  .btn-primary:hover {
-	background-color: #2a838f;
-	border: 1px solid #563d7c;
-  }
+#butterfly {
+  width: 70%;
+  margin: -40px;
+}
 
 
 /*----------------------------------------Our Purpose Section--------------------------*/
 
-  /* About blurb container */
-  .about {
-       width: 60%;
-       margin: 0 auto; 
-       padding-top: 4rem;
-     }
+.about {
+  width: 60%;
+  margin: 0 auto; 
+  padding-top: 4rem;
+}
    
-     /* Welcome horizontal line */
-   .about hr {
-       border-top: 2px solid #000;
-       width: 95%; 
-       margin-top: .3rem;
-       margin-bottom: 1rem; 
-     }
+.about hr {
+  border-top: 2px solid #000;
+  width: 95%; 
+  margin-top: .3rem;
+  margin-bottom: 1rem; 
+}
    
-    /* About heading */
-   .about h2 {
-       font-size: 400%;
-       font-weight: 500;
-       color: #000;
+.about h2 {
+  font-size: 500%;
+  font-weight: 500;
+  color: #000;
+}
 
-    }
+.about h6 {
+  font-size: 200%;
+  font-weight: 500;
+  color: #000;
+}
+ 
+/* -------------------------------Team Section */
 
-     /* About blurb */
-   .about h6 {
-       font-size: 200%;
-       font-weight: 500;
-       color: #000;
-    }
-   
+/* Meet heading */
+.team h2 {
+  font-size: 500%;
+  font-weight: 500;
+  color: #FFF;
+  margin-top: 40px;
+  text-shadow: 7px 2px 6px #000000;  
+}
 
+.team p {
+	font-size: 150%;
+	font-weight: 500;
+	color: #000;
+}
 
-    /* Meet heading */
-   .meet h2 {
-    font-size: 400%;
-    font-weight: 500;
-    color: #FFF;
-    margin-top: 40px;
-	text-shadow: 7px 2px 6px #000000;
-    
- }
-
- .card {
+.card {
   -webkit-box-shadow: 7px 2px 6px 0px rgba(0,0,0,0.75);
- }
+}
 
+/* Learn more Buttons */
+.btn-primary {
+	color: #000000;
+	background-color: #FFF;
+	border: 1px solid rgb(26, 26, 26);
+	margin-bottom: 30px;	
+}
+		
+.btn-primary:hover {
+	background-color: #3390bb;
+}
   /*-------------------------------------------Media Queries ---------------------------*/
 
 @media (max-width: 992px) {
@@ -137,8 +125,57 @@
 
 @media (max-width: 768px) {
 
+  .about-hero h1 {
+    font-size: 500%;                  
+  }
+
+  .about-hero h3 {
+    font-size: 250%;
+  }
+
+  .about {
+    width: 80%;
+  }
+
+  .about h2 {
+    font-size: 400%;
+  }
+
 }
 
 @media (max-width: 576px) {
+
+  .about-hero h1 {
+    font-size: 400%;                  
+  }
+
+  .about-hero h3 {
+    font-size: 225%;
+  }
+
+  #butterfly {
+    width: 90%;
+  }
+
+  .about {
+    width: 90%;
+  }
+
+  .about h2 {
+    font-size: 300%;
+  }
+
+  .about h6 {
+    font-size: 150%;
+    color: #000;
+  }
+
+  .team h2 {
+    font-size: 300%;
+  }
+
+  .team p {
+  	font-size: 140%;
+  }
 
 }
