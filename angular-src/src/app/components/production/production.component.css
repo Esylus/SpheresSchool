@@ -3,110 +3,89 @@
 	padding-bottom: 4rem;
 }
 
-/* Stationary Hero Section */
-.bgProduct
-{
-    background: url('../../../assets/images/ableton.png')  no-repeat 50% 50%;
-    box-sizing: border-box; 
-    display: table;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    /* margin-top: -80px; */
+.bgProduct {
+  background: url('../../../assets/images/ableton.png')  no-repeat 50% 50%;
+  box-sizing: border-box; 
+  display: table;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
 }
 
-
-
-/* Style caption sitting directly in the center */
 .landing-text {
-    display: table-cell;
-    vertical-align: middle;
-  }
+  display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 100px;
+}
 
-	/* Hero background opauge black box  */
 .frame{
 	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 1%;
 	margin-left: 15%;
 	margin-right: 15%;
-
 }
 
-/* Main Spheres heading */
 .landing-text h1 {
-  font-size: 900%;
+  font-size: 800%;
 	text-shadow: 7px 2px 6px #000;    
 	color: #FFF;
 	padding-top: 25px;
-
 }
 
-  /* School Of Music heading */
-  .landing-text h3 {
+.landing-text h3 {
 	font-size: 350%;
 	font-weight: 500;
 	text-shadow: 7px 2px 6px #000;
 	color: #FFF ;
+}
 
-	
-  }
+.btnSignUp{
+	padding-top: 10px;
+	padding-bottom: 35px;
+}
 
-  /* To place contact button perfectly on hero */
-	.btnSignUp{
-		padding-top: 10px;
-		padding-bottom: 35px;
-	}
+/*------------------------------------ JumboTron Section----------------------- */
 
-  /*------------------------------------ JumboTron Section----------------------- */
-
-  /* Jumbotron */
-  .jumbotron {
+.jumbotron {
 	padding: 1rem;
-	border-radius: 0;                              /*Remove default jumbotron padding*/
-	margin-bottom: 50px;                            /* Removes small parralax gap */
+	border-radius: 0;                              
+	margin-bottom: 50px;                        
 	background-color: #000;
 	border-top: 1px solid #FFF;
 }
 
-  .jumbotron h6 {
+.jumbotron h6 {
 	padding-top: 1%;
-	font-size: 175%;
+	font-size: 200%;
 	font-weight: 500;
 	color: #FFF;
- }
+}
 
- /* Contact us button */
-   .btn-primary {
+.btn-primary {
 	color: #000000;
 	background-color: #FFF;
 	border: 1px solid rgb(26, 26, 26);
-	}
+}
 	
-	/* Contact us HOVER */
-	.btn-primary:hover {
+.btn-primary:hover {
 	background-color: #3390bb;
-	border: 1px solid #563d7c;
 	}
  
 
-        /*----------------------------------------------- Logo 2 Part Section---------------------------------- */
+/*----------------------------------------------- Global Containers---------------------------------- */
 
-/* Global Container Size and Alignment   */
-.product{
+/* .product{
 	padding-top: 75px;
 	text-align: center;
     vertical-align: middle;                      
 }
 
-/* Global Heading horizontal line */
 .product hr {
     border-top: 2px solid #000;
     width: 50%; 
   }
 
-
- /* Global Production heading */
  .product h2 {
 	font-size: 300%;
 	font-weight: 500;
@@ -118,34 +97,32 @@
 	font-size: 150%;
 	font-weight: 500;
 	color: #000;
-}
+} */
 
 /*-------------------------------------------------- Global Black Container Size and Alignment   */
+
 .bgBlack{
 	padding-top: 75px;
 	text-align: center;
-    vertical-align: middle; 
-    background-color: #000;                     
+  vertical-align: middle; 
+  background-color: #000;                     
 }
 
-/* Global Heading horizontal line */
 .bgBlack hr {
-    border-top: 2px solid #FFF;
-    width: 50%; 
-  }
+  border-top: 2px solid #FFF;
+  width: 50%; 
+}
 
-
- /* Global Production heading */
- .bgBlack h2 {
+.bgBlack h2 {
 	font-size: 300%;
 	font-weight: 500;
 	text-shadow: 7px 2px 6px #000;
 	color: #FFF;
-  }
+}
 
 .bgBlack p {
 	font-size: 150%;
-    font-weight: 500;
+  font-weight: 500;
 	text-shadow: 7px 2px 6px #000;    
 	color: #FFF;
 }
@@ -153,36 +130,33 @@
 .bgBlack h5 {
 	font-size: 150%;
 	font-weight: 500;
-    color: #FFF;
-    margin-top: 10px;
-  }
-
-
-/* -------------------------------------------------------------Global WHITE Container Size and Alignment   */
-.bgWhite{
-	padding-top: 75px;
-	text-align: center;
-    vertical-align: middle;                      
+  color: #FFF;
+  margin-top: 10px;
 }
 
-/* Global Heading horizontal line */
+/* -------------------------------------------------------------Global WHITE Container Size and Alignment   */
+
+.bgWhite {
+	padding-top: 75px;
+	text-align: center;
+  vertical-align: middle;                      
+}
+
 .bgWhite hr {
-    border-top: 2px solid #000;
-    width: 50%; 
-  }
+  border-top: 2px solid #000;
+  width: 50%; 
+}
 
-
- /* Global Production heading */
- .bgWhite h2 {
-	font-size: 300%;
-	font-weight: 500;
-	text-shadow: 7px 2px 6px #FFF;
-	color: #000;
-  }
+.bgWhite h2 {
+  font-size: 300%;
+  font-weight: 500;
+  text-shadow: 7px 2px 6px #FFF;
+  color: #000;
+}
 
 .bgWhite p {
 	font-size: 150%;
-    font-weight: 500;
+  font-weight: 500;
 	text-shadow: 7px 2px 6px #FFF;    
 	color: #000;
 }
@@ -190,42 +164,39 @@
 .bgWhite h5 {
 	font-size: 150%;
 	font-weight: 500;
-    color: #000;
-    margin-top: 10px;
-  }
+  color: #000;
+  margin-top: 10px;
+}
 
 
-/* Dropdown Section */
+/*----------------------- Dropdown Section */
+
 /* Global Space below button and dropdown */
 .padBelow {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 2rem;
+}
   
-  /* Dropdown thumbnails */
-  .thumbnail {
-    max-width: 100%;
-  }
+/* Dropdown thumbnails */
+.thumbnail {
+  max-width: 100%;
+}
   
 /* Specific images */
-  #serum {
+#serum {
 	width: 400px;
 }
 
-  #kick {
+#kick {
 	width: 500px;
 }
 
-  #composing {
+#composing {
 	width: 600px;
 }
 
-  #abletonMix {
+#abletonMix {
 	width: 450px;
 }
-
-
-
-
 
   /*-------------------------------------------Media Queries ---------------------------*/
 
@@ -235,8 +206,45 @@
 
 @media (max-width: 768px) {
 
+	.landing-text h1 {
+		font-size: 500%;
+	}
+	
+	.landing-text h3 {
+		font-size: 225%;
+	}
+
 }
 
 @media (max-width: 576px) {
+
+	.frame{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.landing-text h1 {
+		font-size: 400%;
+	}
+	
+	.landing-text h3 {
+		font-size: 200%;
+	}
+
+	.jumbotron h6 {
+		font-size: 150%;
+  }
+
+	.bgBlack h2 {
+		font-size: 200%;
+	}
+
+	.bgWhite h2 {
+		font-size: 200%;
+	}
+
+	.thumbnail {
+	  max-width: 50%;
+  }
 
 }

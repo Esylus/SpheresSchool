@@ -3,101 +3,93 @@
 	padding-bottom: 4rem;
 }
 
-/* Stationary Hero Section */
 .bgPiano {
-    background: url('../../../assets/images/piano.jpg')  no-repeat 50% 50%;
-    box-sizing: border-box; 
-    display: table;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    /* margin-top: -80px; */
+  background: url('../../../assets/images/piano.jpg')  no-repeat 50% 50%;
+  box-sizing: border-box; 
+  display: table;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
 }
 
-/* Style caption sitting directly in the center */
+/*------------------------------------------ Hero Section */
+
 .landing-text {
   display: table-cell;
-  vertical-align: middle;
   padding-left: 20%;
+  padding-top: 150px;
 }
 
-/* Main Spheres heading */
 .landing-text h1 {
-    font-size: 800%;
+  font-size: 700%;
 	text-shadow: 7px 2px 6px #FFF;    
-	color: #000;
-	margin-top: -250px;
+  color: #000;
 }
 
-  /* School Of Music heading */
-  .landing-text h3 {
+.landing-text h3 {
 	font-size: 300%;
   font-weight: 500;
   letter-spacing: 2px; 
 	text-shadow: 7px 2px 6px #000;
-	color: #FFF;
-  }
+  color: #FFF;
+  padding-bottom: 15px;
+}
 
-  /* To place contact button perfectly on hero */
 .btnContact{
   padding-left: 10%;
 }
 
-   /* Contact us button */
- .btn-primary {
+
+.btn-primary {
 	color: #000000;
 	background-color: #FFF;
   border: 1px solid rgb(26, 26, 26);
-	}
+}
 	
-	/* Contact us HOVER */
-	.btn-primary:hover {
+.btn-primary:hover {
 	background-color: #3390bb;
-	border: 1px solid #563d7c;
-	}
+}
 
   /*------------------------------------ JumboTron Section----------------------- */
 
-  /* Jumbotron */
-  .jumbotron {
+.jumbotron {
 	padding: 1rem;
-	border-radius: 0;                              /*Remove default jumbotron padding*/
-	margin-bottom: -65px;                            /* Removes small parralax gap */
+	border-radius: 0;                          
+	margin-bottom: -65px;                          
   background-color: #000;
   border-top: 1px solid #FFF;
 }
 
-  .jumbotron h6 {
+.jumbotron h6 {
 	padding-top: 1%;
-	font-size: 180%;
+	font-size: 200%;
 	font-weight: 500;
 	color: #FFF;
  }
 
     /* ---------------------------------------Piano Levels-------------------------------------- */
 
-  /* Welcome horizontal line */
-    .lessons hr {
-    border-top: 2px solid #000;
-    width: 35%; 
-    margin-bottom: 2rem; 
-    }
 
-/* Main Spheres heading */
-h1 {
-  font-size: 400%;
-text-shadow: 7px 2px 6px #FFF;    
-color: #000;
-padding-top: 50px;
+.lessons hr {
+  border-top: 2px solid #000;
+  width: 35%; 
+  margin-bottom: 2rem; 
 }
 
-    .piano h6 {
-    padding-top: 1%;
-    font-size: 150%;
-    font-weight: 500;
-    color: #000;
-     }
+.lessons h1 {
+  font-size: 400%;
+  text-shadow: 7px 2px 6px #FFF;    
+  color: #000;
+  padding-top: 50px;
+}
+
+.piano h6 {
+  padding-top: 1%;
+  font-size: 175%;
+  font-weight: 500;
+  color: #000;
+}
 
 .black h1 {
   color: white;
@@ -106,19 +98,28 @@ padding-top: 50px;
 
 .black hr {
   border-top: 2px solid #FFF;
-  
 }
 
-.black{
+.black {
   background-color: black;
 }
 
-#intermediate{
+.piano .card {
+  border:none;
+
+  
+}
+
+.black h6{
+  color: white;
+}
+
+#intermediate {
   width: 55%;
 }
 
-#advanced{
-  width: 55%;
+#advanced {
+  width: 65%;
 }
 
  /*-------------------------------------------Media Queries ---------------------------*/
@@ -129,8 +130,45 @@ padding-top: 50px;
 
 @media (max-width: 768px) {
 
+  .landing-text {
+    padding-left: 10%;
+    padding-top: 100px;
+  }
+
+  .landing-text h1 {
+    font-size: 500%;
+  }
+  
+  .landing-text h3 {
+    font-size: 225%;
+  }
+
+  .lessons h1 {
+    font-size: 400%;
+  }
+
 }
 
 @media (max-width: 576px) {
 
+
+  .landing-text h1 {
+    font-size: 400%;
+  }
+  
+  .landing-text h3 {
+    font-size: 200%;
+  }
+
+  .jumbotron h6 {
+		font-size: 150%;
+  }
+  
+  .lessons h1 {
+    font-size: 300%;
+  }
+
+  .piano h6 {
+    font-size: 150%;
+  }
 }

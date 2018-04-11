@@ -1,23 +1,23 @@
 
 .padding {
 	padding-bottom: 4rem;
-  }
-
-/*--------------------------------- Background Imaginig Hero Section */
-.bgTest 
-{
-    background: url('../../../assets/images/testimonials.jpg')  no-repeat center center fixed;
-    display: table; 
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    z-index: -1;
 }
 
-.bgTest:before{
+/*--------------------------------- Background Imaginig Hero Section */
+
+.bgTest {
+  background: url('../../../assets/images/testimonials.jpg')  no-repeat center center fixed;
+  display: table; 
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bgTest:before {
 	content: '';
-	background: url('../../../assets/images/testimonials.jpg') no-repeat;
+	background: url('../../../assets/images/testimonials.jpg') no-repeat center center fixed;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -28,31 +28,32 @@
 }
 
 /* ----------------------------------------------Intro */
-/* Style caption sitting directly in the center */
+
 .test-headline {
   display: table-cell;
 	text-align: center;
   vertical-align: middle;
-  }
-
-  /* Main heading */
-.test-headline h1 {
-	font-size: 600%;
-	text-shadow: 2px 2px 3px #3D8103;       /*Shadow is 1px horz, 1px vert, 10px width, color black*/
-	color: #FFF;          
-  padding-bottom: 50px;	
 }
 
-  /* Sub headings */
-  .test-headline h5 {
-    font-size: 200%;
-    font-weight: 500;
-    color: #FFF;
-    text-shadow: 1px 1px 3px #3D8103; 
+/* Main heading */
+.test-headline h1 {
+	font-size: 600%;
+	text-shadow: 2px 2px 3px #3D8103;       
+	color: #FFF;          
+  padding-bottom: 50px;
+  line-height: 150%;	
+}
+
+/* Sub headings */
+.test-headline h5 {
+  font-size: 200%;
+  font-weight: 500;
+  color: #FFF;
+  text-shadow: 1px 1px 3px #3D8103; 
  }
 
 /* -----------------------------------------------Animation */
-/* Main Name Animation */
+
 #whyStudy {
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 1s;
@@ -79,37 +80,32 @@
 }
 /*----------------------------------------Testimonial Section--------------------------*/
 
-  /* Review blurb containers */
-  .test {
-    width: 60%;
-    margin: 0 auto; 
-    padding-top: 4rem;
-  }
+.test {
+  width: 67%;
+  margin: 0 auto; 
+  padding-top: 4rem;
+}
 
-  /* Testimonial horizontal line */
 .test hr {
-    border-top: 2px solid #FFF;
-    width: 95%; 
-    margin-top: 3rem;
-    margin-bottom: 1rem; 
-  }
+  border-top: 2px solid #FFF;
+  width: 95%; 
+  margin-top: 3rem;
+  margin-bottom: 1rem; 
+}
 
- /* Testimonial heading */ 
 .test h2 {
-    font-size: 600%;
-    font-weight: 500;
-    color: #FFF;
-    text-shadow: 2px 2px 3px #3D8103; 
-    
- }
-  /* Testimonial blurb */
-.test h6 {
-    font-size: 200%;
-    font-weight: 500;
-    color: #FFF;
-    text-shadow: 1px 1px 3px #3D8103; 
+  font-size: 600%;
+  font-weight: 500;
+  color: #FFF;
+  text-shadow: 2px 2px 3px #3D8103;  
+}
 
- }
+.test h6 {
+  font-size: 200%;
+  font-weight: 500;
+  color: #FFF;
+  text-shadow: 1px 1px 3px #3D8103; 
+}
 
 
     /*-------------------------------------------Media Queries ---------------------------*/
@@ -120,8 +116,44 @@
 
 @media (max-width: 768px) {
 
+  .test-headline h1 {
+	  font-size: 400%;
+  }
+
+  .test-headline h5 {
+    font-size: 175%; 
+  }
+
+  .test {
+    width: 80%;
+  }
+
+  .test h2 {
+    font-size: 400%; 
+  }
+  
+  .test h6 {
+    font-size: 175%; 
+  }
+
 }
 
 @media (max-width: 576px) {
+
+  .test-headline h1 {
+	  font-size: 300%;
+  }
+
+  .test-headline h5 {
+    font-size: 150%; 
+  }
+
+  .test {
+    width: 90%;
+  }
+  
+  .test h6 {
+    font-size: 150%; 
+  }
 
 }
