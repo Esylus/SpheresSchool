@@ -1,0 +1,197 @@
+.padding {
+	padding-bottom: 4rem;
+  }
+
+/* Carousel removed until further experimentation */
+
+/* .carousel-inner img 
+{
+    box-sizing: border-box; 
+    display: table;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    margin-top: -80px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+}
+  
+
+.carousel-caption h1 {
+  font-size: 800%;
+	text-shadow: 7px 2px 6px #FFF;    
+	color: #000;   
+}
+  
+.carousel-caption h3 {
+	font-size: 300%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #000;
+  color: #FFF;
+  padding-bottom: 40px;
+}
+  
+*/
+
+
+
+.bgProduct {
+  background: url('../../../assets/images/basscoast.jpg')  no-repeat 50% 50%;
+  box-sizing: border-box; 
+  display: table;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.landing-text {
+  display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 100px;
+}
+
+.frame{
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 1%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.landing-text h1 {
+  font-size: 800%;
+	text-shadow: 7px 2px 6px #000;    
+	color: #FFF;
+	padding-top: 25px;
+}
+
+.landing-text h3 {
+	font-size: 350%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #000;
+	color: #FFF ;
+}
+
+.btn-primary {
+  color: #000000;
+  background-color: #FFF;
+  border: 1px solid rgb(26, 26, 26);
+}
+    
+.btn-primary:hover {
+  background-color: #3390bb;
+} 
+
+  /*----------------------------------------Welcome Section--------------------------*/
+
+.blackSpace{
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  border-top: 1px solid #FFF;
+}
+
+.perform {
+  width: 77%;
+  margin: 0 auto; 
+  padding-top: 4rem;
+}
+   
+.perform hr {
+  border-top: 2px solid #000;
+  width: 95%; 
+  margin-top: .3rem;
+  margin-bottom: 1rem; 
+}
+
+.perform h2 {
+  font-size: 500%;
+  font-weight: 500;
+  color: #000;
+}
+
+.perform h6 {
+  font-size: 200%;
+  font-weight: 500;
+  color: #000;
+}
+
+    /*----------------------------------------------- Logo 2 Part Section---------------------------------- */
+
+.performdetail{
+	text-align: center;
+  vertical-align: middle;
+  padding-bottom: 30px;
+}
+
+.performdetail p {
+	font-size: 150%;
+	font-weight: 500;
+	color: #000;
+}
+
+.performdetail hr {
+  border-top: 2px solid #000;
+  width: 55%; 
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+}
+
+#makemusic {
+  filter:brightness(120%);
+}
+
+  /*-------------------------------------------Media Queries ---------------------------*/
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+  .landing-text h1 {
+    font-size: 500%;
+  }
+  
+  .landing-text h3 {
+    font-size: 225%;
+  }
+
+  .perform h2 {
+    font-size: 400%;
+  }
+  
+  .perform h6 {
+    font-size: 170%;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .landing-text h1 {
+    font-size: 400%;
+  }
+  
+  .landing-text h3 {
+    font-size: 200%;
+  }
+
+  .perform {
+    width: 90%;
+  }
+
+  .perform h2 {
+    font-size: 300%;
+  }
+  
+  .perform h6 {
+    font-size: 170%;
+  }
+
+}  
