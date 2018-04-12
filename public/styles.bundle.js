@@ -3,7 +3,7 @@ webpackJsonp(["styles"],{
 /***/ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/styles.css":
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n@font-face{                            /* load font for use */\n    font-family: kouskFont;\n    src: url('CurlyStars.247e05f8e3a4ea6e98e7.ttf');\n}\nhtml, body\n{\n\n   \n    height: 100vh; /* set viewport constraint */\n    min-height: 100%; /* enforce height */\n\n    /* height: 100%; */\n    width: 100%;  \n    margin: 0;\n    padding: 0;\n\n    font-family: 'kouskFont', sans-serif;      /*Global font*/\n\n}"
+module.exports = "/* You can add global styles to this file, and also import other style files */\r\n@font-face{                            /* load font for use */\r\n    font-family: kouskFont;\r\n    src: url('CurlyStars.247e05f8e3a4ea6e98e7.ttf');\r\n}\r\nhtml, body\r\n{\r\n\r\n   \r\n    height: 100vh; /* set viewport constraint */\r\n    min-height: 100%; /* enforce height */\r\n\r\n    /* height: 100%; */\r\n    width: 100%;  \r\n    margin: 0;\r\n    padding: 0;\r\n\r\n    font-family: 'kouskFont', sans-serif;      /*Global font*/\r\n\r\n}"
 
 /***/ }),
 
