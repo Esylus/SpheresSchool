@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 8080;
 const send = require('./routes/send');  // subrouter ADD ME
 
 
