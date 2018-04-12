@@ -16,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PerformanceComponent } from './components/performance/performance.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const appRoutes: Routes = [  // url:component routing
   {path:'', component: HomeComponent},
@@ -25,6 +26,8 @@ const appRoutes: Routes = [  // url:component routing
   {path:'production', component: ProductionComponent},
   {path:'performance', component: PerformanceComponent},
   {path:'contact', component: ContactComponent},
+  {path: '404', component: NotFoundComponent},
+  {path: '**', redirectTo: '/404'}
 ]
 
 @NgModule({
@@ -38,7 +41,8 @@ const appRoutes: Routes = [  // url:component routing
     ContactComponent,
     NavbarComponent,
     FooterComponent,
-    PerformanceComponent
+    PerformanceComponent,
+    NotFoundComponent
   ],
   imports: [  
     BrowserModule,

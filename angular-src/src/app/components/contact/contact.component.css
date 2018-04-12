@@ -1,16 +1,20 @@
 /* Stationary Hero Section */
 
 .bgContact {
-    background: url('../../../assets/images/contact.jpg')  no-repeat center center;
+    background: url('../../../assets/images/contact.jpg')  no-repeat center center fixed;
     box-sizing: border-box; 
     position: relative;
+    top: 0;
+    left: 0;
+    overflow: auto;
     height: 100vh;
     width: 100%;
     background-size: cover; 
+    background-attachment: scroll
 }
 
 .landing-text {
-    margin-top: 210px;
+    margin-top: 50px;
 }
 
 .landing-text h1 {
@@ -51,8 +55,8 @@
 
 /* Spheres Logo */
 .user-img img {
-    height: 175px;
-    width: 175px;
+    height: 75px;
+    width: 75px;
     border-radius: 5px;
 }
 
@@ -151,7 +155,7 @@ button {
 
 .fa-facebook, .fa-instagram, .fa-linkedin,
 .fa-soundcloud, .fa-youtube {
-    font-size: 3.5em;
+    font-size: 4.5em;
 }
 
   .fa-facebook{
@@ -188,7 +192,7 @@ button {
 @media (max-width: 768px) {
 
     .landing-text {
-        margin-top: 0px;
+        margin-top: 50px;
         text-align: center;
     }
     
@@ -198,11 +202,13 @@ button {
     
     .landing-text h3 {
         font-size: 200%;
+        padding: 10px;
+        
     }
 
     .fa-facebook, .fa-instagram, .fa-linkedin,
     .fa-soundcloud, .fa-youtube {
-    font-size: 1.5em;
+    font-size: 2.5em;
     }
 
 }
@@ -211,8 +217,9 @@ button {
 
 
     .landing-text {
-        margin-top: 0px;
+        margin-top: 50px;
         text-align: center;
+
     }
     
     .landing-text h1 {
@@ -221,11 +228,12 @@ button {
     
     .landing-text h3 {
         font-size: 150%;
+        padding: 10px;
     }
 
     .fa-facebook, .fa-instagram, .fa-linkedin,
     .fa-soundcloud, .fa-youtube {
-    font-size: 1.5em;
+    font-size: 2em;
     }
 
 }

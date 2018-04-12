@@ -20,7 +20,7 @@
 
 .bgAbout:before{
 	content: '';
-	background: url('../../../assets/images/about.jpg') no-repeat center center fixed;
+	background: url('../../../assets/images/about.jpg') no-repeat center center;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -96,6 +96,12 @@
   text-shadow: 7px 2px 6px #000000;  
 }
 
+.team h4 {
+	font-size: 200%;
+	font-weight: 500;
+	color: #000;
+}
+
 .team p {
 	font-size: 150%;
 	font-weight: 500;
@@ -126,7 +132,7 @@
 @media (max-width: 768px) {
 
   .about-hero h1 {
-    font-size: 500%;                  
+    font-size: 600%;                  
   }
 
   .about-hero h3 {

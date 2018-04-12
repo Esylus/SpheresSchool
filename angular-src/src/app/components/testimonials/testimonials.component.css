@@ -17,7 +17,7 @@
 
 .bgTest:before {
 	content: '';
-	background: url('../../../assets/images/testimonials.jpg') no-repeat center center fixed;
+	background: url('../../../assets/images/testimonials.jpg') no-repeat center center;
 	position: fixed;
 	top: 0;
 	left: 0;
