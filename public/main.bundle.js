@@ -708,7 +708,7 @@ var SendMsgService = /** @class */ (function () {
     SendMsgService.prototype.sendMessage = function (message) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('send', message, { headers: headers })
+        return this.http.post('www.spheresschool.ca/send', message, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     SendMsgService = __decorate([
