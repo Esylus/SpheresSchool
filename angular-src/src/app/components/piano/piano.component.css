@@ -1,9 +1,175 @@
 
-.bgPiano
-{
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    background: url('../../../assets/images/piano.jpg')  no-repeat 50% 50%;
-    background-size: cover;
+.padding {
+	padding-bottom: 4rem;
+}
+
+.bgPiano {
+  background: url('../../../assets/images/piano.jpg')  no-repeat 50% 50%;
+  box-sizing: border-box; 
+  display: table;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+/*------------------------------------------ Hero Section */
+
+.landing-text {
+  display: table-cell;
+  padding-left: 20%;
+  padding-top: 150px;
+}
+
+.landing-text h1 {
+  font-size: 700%;
+	text-shadow: 7px 2px 6px #FFF;    
+  color: #000;
+}
+
+.landing-text h3 {
+	font-size: 300%;
+  font-weight: 500;
+  letter-spacing: 2px; 
+	text-shadow: 7px 2px 6px #000;
+  color: #FFF;
+  padding-bottom: 15px;
+}
+
+.btnContact{
+  padding-left: 10%;
+}
+
+
+.btn-primary {
+	color: #000000;
+	background-color: #FFF;
+  border: 1px solid rgb(26, 26, 26);
+  padding-bottom: 10px;
+}
+	
+.btn-primary:hover {
+	background-color: #3390bb;
+}
+
+  /*------------------------------------ JumboTron Section----------------------- */
+
+.jumbotron {
+	padding: 1rem;
+	border-radius: 0;                          
+	margin-bottom: -65px;                          
+  background-color: #000;
+  border-top: 1px solid #FFF;
+}
+
+.jumbotron h6 {
+	padding-top: 1%;
+	font-size: 200%;
+	font-weight: 500;
+	color: #FFF;
+ }
+
+    /* ---------------------------------------Piano Levels-------------------------------------- */
+
+
+.lessons hr {
+  border-top: 2px solid #000;
+  width: 35%; 
+  margin-bottom: 2rem; 
+}
+
+.lessons h1 {
+  font-size: 400%;
+  text-shadow: 7px 2px 6px #FFF;    
+  color: #000;
+  padding-top: 50px;
+}
+
+.piano h6 {
+  padding-top: 1%;
+  font-size: 175%;
+  font-weight: 500;
+  color: #000;
+}
+
+.black h1 {
+  color: white;
+  text-shadow: none;
+}
+
+.black hr {
+  border-top: 2px solid #FFF;
+}
+
+.black {
+  background-color: black;
+}
+
+.piano .card {
+  border:none;
+
+  
+}
+
+.black h6{
+  color: white;
+}
+
+#intermediate {
+  width: 55%;
+}
+
+#advanced {
+  width: 65%;
+}
+
+ /*-------------------------------------------Media Queries ---------------------------*/
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+  .landing-text {
+    padding-left: 10%;
+    padding-top: 100px;
+  }
+
+  .landing-text h1 {
+    font-size: 500%;
+  }
+  
+  .landing-text h3 {
+    font-size: 225%;
+  }
+
+  .lessons h1 {
+    font-size: 400%;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+
+  .landing-text h1 {
+    font-size: 400%;
+  }
+  
+  .landing-text h3 {
+    font-size: 200%;
+  }
+
+  .jumbotron h6 {
+		font-size: 150%;
+  }
+  
+  .lessons h1 {
+    font-size: 300%;
+  }
+
+  .piano h6 {
+    font-size: 150%;
+  }
 }

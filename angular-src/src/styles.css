@@ -1,7 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-body 
+@font-face{                            /* load font for use */
+    font-family: kouskFont;
+    src: url("assets/fonts/CurlyStars.ttf");
+}
+
+html, body
 {
+
+   
+    height: 100vh; /* set viewport constraint */
+    min-height: 100%; /* enforce height */
+
+    /* height: 100%; */
+    width: 100%;  
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+
+    font-family: 'kouskFont', sans-serif;      /*Global font*/
+
 }

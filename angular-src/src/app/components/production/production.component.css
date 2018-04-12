@@ -1,9 +1,250 @@
 
-.bgProduction 
-{
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    background: url('../../../assets/images/production.jpg')  no-repeat 50% 50%;
-    background-size: cover;
+.padding {
+	padding-bottom: 4rem;
+}
+
+.bgProduct {
+  background: url('../../../assets/images/ableton.png')  no-repeat 50% 50%;
+  box-sizing: border-box; 
+  display: table;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.landing-text {
+  display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 100px;
+}
+
+.frame{
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 1%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.landing-text h1 {
+  font-size: 800%;
+	text-shadow: 7px 2px 6px #000;    
+	color: #FFF;
+	padding-top: 25px;
+}
+
+.landing-text h3 {
+	font-size: 350%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #000;
+	color: #FFF ;
+}
+
+.btnSignUp{
+	padding-top: 10px;
+	padding-bottom: 35px;
+}
+
+/*------------------------------------ JumboTron Section----------------------- */
+
+.jumbotron {
+	padding: 1rem;
+	border-radius: 0;                              
+	margin-bottom: 50px;                        
+	background-color: #000;
+	border-top: 1px solid #FFF;
+}
+
+.jumbotron h6 {
+	padding-top: 1%;
+	font-size: 200%;
+	font-weight: 500;
+	color: #FFF;
+}
+
+.btn-primary {
+	color: #000000;
+	background-color: #FFF;
+	border: 1px solid rgb(26, 26, 26);
+}
+	
+.btn-primary:hover {
+	background-color: #3390bb;
+	}
+ 
+
+/*----------------------------------------------- Global Containers---------------------------------- */
+
+/* .product{
+	padding-top: 75px;
+	text-align: center;
+    vertical-align: middle;                      
+}
+
+.product hr {
+    border-top: 2px solid #000;
+    width: 50%; 
+  }
+
+ .product h2 {
+	font-size: 300%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #FFF;
+	color: #000;
+  }
+
+.product p {
+	font-size: 150%;
+	font-weight: 500;
+	color: #000;
+} */
+
+/*-------------------------------------------------- Global Black Container Size and Alignment   */
+
+.bgBlack{
+	padding-top: 75px;
+	text-align: center;
+  vertical-align: middle; 
+  background-color: #000;                     
+}
+
+.bgBlack hr {
+  border-top: 2px solid #FFF;
+  width: 50%; 
+}
+
+.bgBlack h2 {
+	font-size: 300%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #000;
+	color: #FFF;
+}
+
+.bgBlack p {
+	font-size: 150%;
+  font-weight: 500;
+	text-shadow: 7px 2px 6px #000;    
+	color: #FFF;
+}
+
+.bgBlack h5 {
+	font-size: 150%;
+	font-weight: 500;
+  color: #FFF;
+  margin-top: 10px;
+}
+
+/* -------------------------------------------------------------Global WHITE Container Size and Alignment   */
+
+.bgWhite {
+	padding-top: 75px;
+	text-align: center;
+  vertical-align: middle;                      
+}
+
+.bgWhite hr {
+  border-top: 2px solid #000;
+  width: 50%; 
+}
+
+.bgWhite h2 {
+  font-size: 300%;
+  font-weight: 500;
+  text-shadow: 7px 2px 6px #FFF;
+  color: #000;
+}
+
+.bgWhite p {
+	font-size: 150%;
+  font-weight: 500;
+	text-shadow: 7px 2px 6px #FFF;    
+	color: #000;
+}
+
+.bgWhite h5 {
+	font-size: 150%;
+	font-weight: 500;
+  color: #000;
+  margin-top: 10px;
+}
+
+
+/*----------------------- Dropdown Section */
+
+/* Global Space below button and dropdown */
+.padBelow {
+  margin-bottom: 2rem;
+}
+  
+/* Dropdown thumbnails */
+.thumbnail {
+  max-width: 100%;
+}
+  
+/* Specific images */
+#serum {
+	width: 400px;
+}
+
+#kick {
+	width: 500px;
+}
+
+#composing {
+	width: 600px;
+}
+
+#abletonMix {
+	width: 450px;
+}
+
+  /*-------------------------------------------Media Queries ---------------------------*/
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+	.landing-text h1 {
+		font-size: 500%;
+	}
+	
+	.landing-text h3 {
+		font-size: 225%;
+	}
+
+}
+
+@media (max-width: 576px) {
+
+	.frame{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.landing-text h1 {
+		font-size: 400%;
+	}
+	
+	.landing-text h3 {
+		font-size: 200%;
+	}
+
+	.jumbotron h6 {
+		font-size: 150%;
+  }
+
+	.bgBlack h2 {
+		font-size: 200%;
+	}
+
+	.bgWhite h2 {
+		font-size: 200%;
+	}
+
+	.thumbnail {
+	  max-width: 50%;
+  }
+
 }

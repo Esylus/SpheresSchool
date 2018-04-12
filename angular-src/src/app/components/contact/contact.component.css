@@ -1,9 +1,239 @@
+/* Stationary Hero Section */
 
-.bgContact 
-{
-    width: 100%;
+.bgContact {
+    background: url('../../../assets/images/contact.jpg')  no-repeat center center fixed;
+    box-sizing: border-box; 
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: auto;
     height: 100vh;
-    box-sizing: border-box;
-    background: url('../../../assets/images/contact.jpg') no-repeat 50% 50%;
-    background-size: cover;
+    width: 100%;
+    background-size: cover; 
+    background-attachment: scroll
+}
+
+.landing-text {
+    margin-top: 50px;
+}
+
+.landing-text h1 {
+    font-size: 500%;
+	text-shadow: 7px 2px 6px #000;    
+	color: #FFF;
+}
+
+.landing-text h3 {
+	font-size: 250%;
+	font-weight: 500;
+	text-shadow: 7px 2px 6px #000;
+    color: #FFF;
+}
+
+  /* -----------------------------------Contact Form----------------------------- */
+
+.main-section{
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: -30px;
+    padding: 0;
+}
+
+/* Main container */
+.modal-content {
+    background-color: #3b4652;
+    opacity: 0.95;
+    padding: 0 18px;
+    box-shadow: 0px 0px 3px #848484; 
+}
+
+/* Spheres Logo Container */
+.user-img {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* Spheres Logo */
+.user-img img {
+    height: 75px;
+    width: 75px;
+    border-radius: 5px;
+}
+
+/* Spacing between inputs */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Input shaping */
+.form-group input {
+    height: 42px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    padding-left: 54px;
+}
+
+/* Textbox shaping */
+.form-group textarea {
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    padding-left: 54px;
+}
+
+.form-group::before{
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f007";
+    position: absolute;
+    font-size: 22px;
+    color: #555e60;
+    left: 28px;
+    padding-top: 4px;
+}
+
+/* Email */
+.form-group:nth-child(2)::before {
+    content: "\f0e0";
+}
+
+/* Phone */
+.form-group:nth-child(3)::before {
+    content: "\f3cd";
+}
+
+/* Message */
+.form-group:last-of-type::before {
+    content: "\f11c";
+}
+
+button {
+    width: 40%;
+    margin: 5px 0 25px;
+}
+
+.btn {
+    background-color: #27c2a5;
+    color: #fff;
+    font-size: 19px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border-bottom: 4px solid #219882;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #25a890 !important;
+    border-bottom: 4px solid #25a890;
+}
+
+.svg-inline--fa {
+    font-size: 20px;
+    margin-right: 7px;   
+}
+
+.forgot {
+    padding: 5px 0 25px;
+}
+
+.forgot a {
+    color: #c2fbfe;
+}
+
+.response p {
+	font-size: 100%;
+    font-weight: 500;
+	text-shadow: 7px 2px 6px #000;    
+	color: #FFF;
+}
+
+
+ /*------------------------------------------Audio Icons -----------------------------*/
+ 
+ .landing-text a {
+	padding-right : 0.5rem;
+  }
+
+.fa-facebook, .fa-instagram, .fa-linkedin,
+.fa-soundcloud, .fa-youtube {
+    font-size: 4.5em;
+}
+
+  .fa-facebook{
+    color: #4267B2;
+  }
+  .fa-instagram{
+	color: #DF3A66;
+  }
+  .fa-linkedin{
+	color: #0077B5;
+  }
+  .fa-soundcloud{
+	color: #FF4700;
+  }
+  .fa-youtube{
+	color: #FF0000;
+  }
+
+  .fa-facebook:hover,
+  .fa-instagram:hover,
+  .fa-linkedin:hover,
+  .fa-soundcloud:hover,
+  .fa-youtube:hover {
+	color: #d5d5d5;
+  }
+
+
+/*-------------------------------------------Media Queries ---------------------------*/
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+    .landing-text {
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    .landing-text h1 {
+        font-size: 350%;
+    }
+    
+    .landing-text h3 {
+        font-size: 200%;
+        padding: 10px;
+        
+    }
+
+    .fa-facebook, .fa-instagram, .fa-linkedin,
+    .fa-soundcloud, .fa-youtube {
+    font-size: 2.5em;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+
+    .landing-text {
+        margin-top: 50px;
+        text-align: center;
+
+    }
+    
+    .landing-text h1 {
+        font-size: 300%;
+    }
+    
+    .landing-text h3 {
+        font-size: 150%;
+        padding: 10px;
+    }
+
+    .fa-facebook, .fa-instagram, .fa-linkedin,
+    .fa-soundcloud, .fa-youtube {
+    font-size: 2em;
+    }
+
 }

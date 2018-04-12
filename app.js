@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 8080;
 const send = require('./routes/send');  // subrouter ADD ME
 
 
@@ -22,6 +22,12 @@ app.get('/', function (req, res) {
 });
 
 app.use('/send', send);     // subrouter ADD ME
+
+// Handling these redirects in Angular but below redirect worked as well
+
+app.get('/*', function (req, res, next) {
+    res.sendFile('public/index.html', {root: __dirname });
+});
 
 app.listen(port, function(){
     console.log('Server started on port ' + port);

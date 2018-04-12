@@ -1,51 +1,94 @@
-nav
-{
-    position:fixed;
-    top: 0;
-    left: 0;
+
+nav.navbar {
     width: 100%;
-    height: 70px;
-    background: rgba(0, 0, 0, 0);
-    padding: 0 100px;
-    box-sizing: border-box;
+    background-color: black;
+    border-bottom: 1px solid #FFF;
 }
 
-nav .brand
-{
-    float: left;
-    height: 100%;
-    line-height: 70px;
+nav.navbar a {
+    font-size: 150%;
 }
 
-nav .brand h2
-{
-    margin: 0;
-    padding: 0;
-    color: #fff;
+#whitelogo{
+    width: 50px;
+    margin-left: 5%;
 }
 
-nav ul
-{
-    float: right;
-    display: flex;
-    margin: 0;
-    padding: 0;
+/* Style nav items */
+.navbar .nav-item .nav-link{
+    color: rgb(255, 255, 255);
+    font-family: kouskFont, sans-serif;
+    font-size: 180%;
+    text-shadow: 3px 1px #000000;
+    padding-left: 15px;
 }
 
-nav ul li
-{
-    list-style: none;
+.navbar .nav-item .nav-link:hover{
+    color: rgb(104, 104, 104);
 }
 
-nav ul li a
-{
-    position: relative;
-    display: block;
-    height: 70px;
-    line-height: 70px;
-    padding : 0 10px;
-    box-sizing: border-box;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
+/* Background of dropdowns  */
+.navbar-nav > li > .dropdown-menu {
+    background-color: #000;
+    border-radius: 5%;
 }
+
+/* Style dropdown nav items */
+.dropdown-menu .dropdown-item{
+    color: rgb(255, 255, 255);
+    font-family: kouskFont, sans-serif;
+    font-size: 160%;
+    background-color:#000;
+    text-shadow: 3px 1px #000000;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color:transparent;
+    color: rgb(104, 104, 104);
+}
+
+/* Toggler button border color */
+button.navbar-toggler{
+    border-color: rgb(251, 251, 251);
+    box-shadow: 2px 1px #000000;
+}
+
+button.navbar-toggler:hover{
+    border-color: rgb(104, 104, 104);
+    outline: none;    
+}
+
+button.navbar-toggler:focus{
+    border-color: #FFF; 
+    outline: none;  
+}
+
+
+@media (max-width: 992px) {
+   
+    /* Style nav items */
+    .navbar .nav-item .nav-link{
+        font-size: 150%;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+    /* Spheres White Logo */
+    nav.navbar a {
+        font-size: 120%;
+    }
+
+    #whitelogo{
+        width: 40px;
+        margin-left: 3%;
+    }
+
+}
+
+

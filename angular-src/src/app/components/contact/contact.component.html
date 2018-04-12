@@ -1,27 +1,60 @@
+<section class="bgContact">
 
-<section class="bgContact"></section>
-<!-- 
-<div>
-    <h3>Email Us</h3>
-    {{msg}}
-    <form type="post" (submit)="messageSubmit()">
-      <p>
-        <label>Name</label>
-        <input type="text" [(ngModel)]="name" name="name">
-      </p>
-      <p>
-        <label>Email Address</label>
-        <input type="email" [(ngModel)]="email" name="email">
-      </p>
-      <p>
-        <label>Phone Number</label>
-        <input type="text" [(ngModel)]="phone" name="phone">
-      </p>
-      <p>
-        <label>Message</label>
-        <textarea name="message" [(ngModel)]="message" rows="5"></textarea>
-      </p>
-      <p >
-        <button type="submit">Submit</button>
-      </p>
-    </form> -->
+    <div class="container-fluid">
+        <div class="row">  
+          
+            <div class="col-md-6">
+                <div class="landing-text text-center">        
+                 <h1>Get in touch with Spheres</h1>         
+                 <h3>778-317-9753</h3>         
+                 <h3>Anna@SpheresSchool.ca</h3>  
+                   <div class="col-12">
+                     <a href="https://soundcloud.com/user-169407138"><i class="fab fa-soundcloud"></i></a>                     
+                     <a href="https://www.facebook.com/Kousk"><i class="fab fa-facebook"></i></a>
+                     <a href="https://www.instagram.com/spheresschool"><i class="fab fa-instagram"></i></a>
+                     <a href="https://www.linkedin.com/company/18518507/"><i class="fab fa-linkedin"></i></a>
+                     <a href="https://www.youtube.com/channel/UClk7P1TLnfFqvzYYqLcvixA/featured"><i class="fab fa-youtube"></i></a>
+                   </div>       
+               </div>
+            </div>          
+
+            <div class="col-md-6">
+                <div class="modal-dialog text-center">
+                    <div class="col-sm-8 main-section">
+                      <div class="modal-content">
+                        <div class="col-12 user-img">
+                          <img id="contactlogo" src="../../../assets/images/logo.png">                               
+                        </div>
+                
+                        <form class="col-12" type="post" (submit)="messageSubmit()">
+                         
+                          <div class="form-group fullName">
+                            <input type="text" class="form-control" placeholder="Enter Name" [(ngModel)]="name" name="name">
+                          </div>
+                         
+                          <div class="form-group">
+                            <input  type="email" class="form-control" placeholder="Enter Email" [(ngModel)]="email" name="email">
+                          </div>
+                         
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter Phone" [(ngModel)]="phone" name="phone">
+                          </div>
+         
+                         <div class="form-group">  
+                            <textarea  class="form-control" name="message" [(ngModel)]="message" rows="4" placeholder="Enter Message"></textarea>
+                          </div>
+                         
+                          <button href="#" type="submit" class="btn"><i class="fas fa-sign-in-alt"></i>Send</button>
+                        </form>
+                
+                        <div class="col-12 response">
+                          <p>{{response}}</p>
+                        </div>
+                
+                    </div>      <!-- End of modal content -->
+                  </div>
+                </div>        
+            </div>
+        </div>
+      </div>
+</section>
