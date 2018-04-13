@@ -55,17 +55,17 @@ button.navbar-toggler{
 
 button.navbar-toggler:hover{
     border-color: rgb(104, 104, 104);
-    outline: none;    
+    outline: none;
 }
 
 button.navbar-toggler:focus{
-    border-color: #FFF; 
-    outline: none;  
+    border-color: #FFF;
+    outline: none;
 }
 
 
 @media (max-width: 992px) {
-   
+
     /* Style nav items */
     .navbar .nav-item .nav-link{
         font-size: 150%;
@@ -90,5 +90,3 @@ button.navbar-toggler:focus{
     }
 
 }
-
-
