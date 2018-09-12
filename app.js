@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 
+console.log('FOUND THE EXPRESS APP');
 
 
 const app = express();
@@ -18,7 +19,7 @@ app.use(cors());
 //set static folder to place front-end app in 
 app.use(express.static(path.join(__dirname, 'public'))); 
 
-app.get('/', function (req, res) {
+app.get('/test', function (req, res) {
     res.send('Invalid Enpoint');
 });
 
