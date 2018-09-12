@@ -2,9 +2,8 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 
-
-
 router.post('/', function(req, res){
+
     const output = `
         <p>You have a new contact request</p>
         <h3>Contact Details</h3>
@@ -22,8 +21,8 @@ let transporter = nodemailer.createTransport({
     secure: false,
     port: 25,
     auth: {
-        user: process.env.NODEMAILER_USER, // your email address
-        pass: process.env.NODEMAILER_PASSWORD // your password
+         user: process.env.NODEMAILER_USER, // your email address
+         pass: process.env.NODEMAILER_PASSWORD // your password
     },
     tls:{
         rejectUnauthorized: false
