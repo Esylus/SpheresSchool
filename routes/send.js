@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 
 
 router.post('/', function(req, res){
-    // console.log('FOUND THE ENDPOINT');
+    console.log('SENT AN EMAIL');
     const output = `
         <p>You have a new contact request</p>
         <h3>Contact Details</h3>
