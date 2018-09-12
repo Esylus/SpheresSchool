@@ -22,8 +22,8 @@ let transporter = nodemailer.createTransport({
     secure: false,
     port: 25,
     auth: {
-        user: 'anna@spheresschool.ca', // your email address
-        pass: 'Spheres2.0' // your password
+        user: process.env.NODEMAILER_USER, // your email address
+        pass: process.env.NODEMAILER_PASSWORD // your password
     },
     tls:{
         rejectUnauthorized: false
@@ -34,7 +34,7 @@ let transporter = nodemailer.createTransport({
 // setup email data with unicode symbols
 let mailOptions = {
     from: '"Nodemailer Contact" <anna@spheresschool.ca>', // sender address
-    to: 'anna@spheresschool.ca', // list of receivers
+    to: process.env.NODEMAILER_USER, // list of receivers
     subject: 'Node Contact Request', // Subject line
     text: 'Hello world?', // plain text body
     html: output // html body
