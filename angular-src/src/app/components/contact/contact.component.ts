@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {SendMsgService} from '../../services/send-msg.service';
+import { SendMsgService } from '../../services/send-msg.service';
 
 
 @Component({
@@ -21,26 +21,25 @@ export class ContactComponent implements OnInit {
   }
 
 
-  messageSubmit(){
+  messageSubmit() {
 
-    const message =
-    {
+    const message =  {
       name: this.name,
       email: this.email,
       phone: this.phone,
       message: this.message
-    }
+    };
     this.response = 'Message sent';
-    this.name='';
-    this.email='';
-    this.phone='';
-    this.message='';
+    this.name = '';
+    this.email = '';
+    this.phone = '';
+    this.message = '';
     console.log(message);
 
-    this.sendMsgService.sendMessage(message).subscribe(data =>{
-      if(data.success){
+    this.sendMsgService.sendMessage(message).subscribe(data => {
+      if (data.success) {
         console.log('Message sent - Thanks');
-      
+
       } else {
         console.log('There was an error');
         this.response = 'Error';
