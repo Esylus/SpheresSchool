@@ -5,6 +5,7 @@ const nodemailer = require('nodemailer');
 
 
 router.post('/', function(req, res){
+    console.log('FOUND THE ENDPOINT');
     const output = `
         <p>You have a new contact request</p>
         <h3>Contact Details</h3>
@@ -22,7 +23,6 @@ let transporter = nodemailer.createTransport({
     secure: false,
     port: 25,
     auth: {
-
         user: 'anna@spheresschool.ca', // your email address
         pass: 'Music2.0' // your password
     },
