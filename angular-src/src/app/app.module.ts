@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms';
-import { HttpModule} from '@angular/http';
-import {RouterModule, Routes} from '@angular/router'; 
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
 
-import {SendMsgService} from './services/send-msg.service';
+import { SendMsgService } from './services/send-msg.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -19,16 +19,16 @@ import { PerformanceComponent } from './components/performance/performance.compo
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const appRoutes: Routes = [  // url:component routing
-  {path:'', component: HomeComponent},
-  {path:'ourschool', component: OurschoolComponent},
-  {path:'testimonials', component: TestimonialsComponent},
-  {path:'piano', component: PianoComponent},
-  {path:'production', component: ProductionComponent},
-  {path:'performance', component: PerformanceComponent},
-  {path:'contact', component: ContactComponent},
-  {path: '404', component: NotFoundComponent},
-  {path: '**', redirectTo: '/404'}
-]
+  { path: '', component: HomeComponent },
+  { path: 'ourschool', component: OurschoolComponent },
+  { path: 'testimonials', component: TestimonialsComponent },
+  { path: 'piano', component: PianoComponent },
+  { path: 'production', component: ProductionComponent },
+  { path: 'performance', component: PerformanceComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '404', component: NotFoundComponent },
+  { path: '**', redirectTo: '/404' }
+];
 
 @NgModule({
   declarations: [
@@ -44,7 +44,7 @@ const appRoutes: Routes = [  // url:component routing
     PerformanceComponent,
     NotFoundComponent
   ],
-  imports: [  
+  imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
