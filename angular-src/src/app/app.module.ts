@@ -16,7 +16,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PerformanceComponent } from './components/performance/performance.component';
+import { PoliciesComponent } from './components/policies/policies.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+
 
 const appRoutes: Routes = [  // url:component routing
   { path: '', component: HomeComponent },
@@ -26,6 +28,7 @@ const appRoutes: Routes = [  // url:component routing
   { path: 'production', component: ProductionComponent },
   { path: 'performance', component: PerformanceComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'policies', component: PoliciesComponent },
   { path: '404', component: NotFoundComponent },
   { path: '**', redirectTo: '/404' }
 ];
@@ -42,7 +45,8 @@ const appRoutes: Routes = [  // url:component routing
     NavbarComponent,
     FooterComponent,
     PerformanceComponent,
-    NotFoundComponent
+    PoliciesComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
