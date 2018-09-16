@@ -37,7 +37,7 @@
 
 /* Main heading */
 .test-headline h1 {
-	font-size: 600%;
+	font-size: 500%;
 	text-shadow: 2px 2px 3px #3D8103;       
 	color: #FFF;          
   padding-bottom: 50px;
@@ -88,8 +88,8 @@
 
 .test hr {
   border-top: 2px solid #FFF;
-  width: 95%; 
-  margin-top: 3rem;
+  width: 25%; 
+  margin-top: 1rem;
   margin-bottom: 1rem; 
 }
 
@@ -98,18 +98,23 @@
   font-weight: 500;
   color: #FFF;
   text-shadow: 2px 2px 3px #3D8103;  
+  margin-bottom: 4rem; 
+
 }
 
 .test h5 {
     font-size: 250%;
     font-weight: 500;
     color: #FFF;
+
+    margin-top: 5rem; 
     text-shadow: 1px 1px 3px #3D8103; 
   }
 
 .test h6 {
   font-size: 200%;
   font-weight: 500;
+  
   color: #FFF;
   text-shadow: 1px 1px 3px #3D8103; 
 }
