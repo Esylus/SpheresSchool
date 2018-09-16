@@ -83,13 +83,15 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_navbar_navbar_component__ = __webpack_require__("./src/app/components/navbar/navbar.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_footer_footer_component__ = __webpack_require__("./src/app/components/footer/footer.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_performance_performance_component__ = __webpack_require__("./src/app/components/performance/performance.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_not_found_not_found_component__ = __webpack_require__("./src/app/components/not-found/not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_policies_policies_component__ = __webpack_require__("./src/app/components/policies/policies.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_not_found_not_found_component__ = __webpack_require__("./src/app/components/not-found/not-found.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -115,7 +117,8 @@ var appRoutes = [
     { path: 'production', component: __WEBPACK_IMPORTED_MODULE_11__components_production_production_component__["a" /* ProductionComponent */] },
     { path: 'performance', component: __WEBPACK_IMPORTED_MODULE_15__components_performance_performance_component__["a" /* PerformanceComponent */] },
     { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_12__components_contact_contact_component__["a" /* ContactComponent */] },
-    { path: '404', component: __WEBPACK_IMPORTED_MODULE_16__components_not_found_not_found_component__["a" /* NotFoundComponent */] },
+    { path: 'policies', component: __WEBPACK_IMPORTED_MODULE_16__components_policies_policies_component__["a" /* PoliciesComponent */] },
+    { path: '404', component: __WEBPACK_IMPORTED_MODULE_17__components_not_found_not_found_component__["a" /* NotFoundComponent */] },
     { path: '**', redirectTo: '/404' }
 ];
 var AppModule = /** @class */ (function () {
@@ -134,7 +137,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_13__components_navbar_navbar_component__["a" /* NavbarComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__components_footer_footer_component__["a" /* FooterComponent */],
                 __WEBPACK_IMPORTED_MODULE_15__components_performance_performance_component__["a" /* PerformanceComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__components_not_found_not_found_component__["a" /* NotFoundComponent */]
+                __WEBPACK_IMPORTED_MODULE_16__components_policies_policies_component__["a" /* PoliciesComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__components_not_found_not_found_component__["a" /* NotFoundComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -341,7 +345,7 @@ module.exports = "\r\nnav.navbar {\r\n    width: 100%;\r\n    background-color: 
 /***/ "./src/app/components/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\n\r\n<nav class=\"navbar navbar-expand-md navbar-dark fixed\" >\r\n\t<div class=\"container-fluid\">         \r\n              <a class=\"navbar-brand\" [routerLink]=\"['/']\"> \r\n                <img id=\"whitelogo\" src=\"../../../assets/images/whitelogo.png\" class=\"img-fluid\"> pheres</a>\r\n\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\">\r\n\t\t\t<span class=\"navbar-toggler-icon\"></span>\r\n\t\t</button>\r\n\t\t<div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n\t\t\t<ul class=\"navbar-nav ml-auto\">\r\n        <li class=\"nav-item\"><a class=\"nav-link\" [routerLink]=\"['/']\">Home</a></li>       \r\n          <li class=\"nav-item dropdown\" onmouseover=\"\">\r\n            <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\"  role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">About</a>\r\n            <div class=\"dropdown-menu\">\r\n              <a class=\"dropdown-item\" [routerLink]=\"['/ourschool']\">Our School</a>\r\n              <a class=\"dropdown-item\" [routerLink]=\"['/testimonials']\">Testimonials</a>           \r\n            </div>\r\n          </li>         \r\n          <li class=\"nav-item dropdown\" onmouseover=\"\">\r\n            <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\"  role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Lessons</a>\r\n            <div class=\"dropdown-menu\">\r\n              <a class=\"dropdown-item\" [routerLink]=\"['/piano']\">Piano</a>\r\n              <a class=\"dropdown-item\" [routerLink]=\"['/production']\">Production</a>             \r\n              <a class=\"dropdown-item\" [routerLink]=\"['/performance']\">Performance</a>             \r\n            </div>\r\n          </li>  \r\n\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" [routerLink]=\"['/contact']\">Contact</a></li>\r\n\t\t\t</ul>\r\n\t\t</div>\r\n\t</div>\r\n</nav>\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+module.exports = "\r\n\r\n\r\n<nav class=\"navbar navbar-expand-md navbar-dark fixed\" >\r\n\t<div class=\"container-fluid\">         \r\n              <a class=\"navbar-brand\" [routerLink]=\"['/']\"> \r\n                <img id=\"whitelogo\" src=\"../../../assets/images/whitelogo.png\" class=\"img-fluid\"> pheres</a>\r\n\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\">\r\n\t\t\t<span class=\"navbar-toggler-icon\"></span>\r\n\t\t</button>\r\n\t\t<div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n\t\t\t<ul class=\"navbar-nav ml-auto\">\r\n        <li class=\"nav-item\"><a class=\"nav-link\" [routerLink]=\"['/']\">Home</a></li>       \r\n          <li class=\"nav-item dropdown\" onmouseover=\"\">\r\n            <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\"  role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">About</a>\r\n            <div class=\"dropdown-menu\">\r\n              <a class=\"dropdown-item\" [routerLink]=\"['/ourschool']\">Our School</a>\r\n              <a class=\"dropdown-item\" [routerLink]=\"['/testimonials']\">Testimonials</a>           \r\n              <a class=\"dropdown-item\" [routerLink]=\"['/policies']\">Policies</a>           \r\n            </div>\r\n          </li>         \r\n          <li class=\"nav-item dropdown\" onmouseover=\"\">\r\n            <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\"  role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Lessons</a>\r\n            <div class=\"dropdown-menu\">\r\n              <a class=\"dropdown-item\" [routerLink]=\"['/piano']\">Piano</a>\r\n              <a class=\"dropdown-item\" [routerLink]=\"['/production']\">Production</a>             \r\n              <a class=\"dropdown-item\" [routerLink]=\"['/performance']\">Performance</a>             \r\n            </div>\r\n          </li>  \r\n\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link\" [routerLink]=\"['/contact']\">Contact</a></li>\r\n\t\t\t</ul>\r\n\t\t</div>\r\n\t</div>\r\n</nav>\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -575,6 +579,56 @@ var PianoComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], PianoComponent);
     return PianoComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/policies/policies.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "\r\n.padding {\r\n\tpadding-bottom: 4rem;\r\n}\r\n\r\n/*--------------------------------- Background Imaginig Hero Section */\r\n\r\n.bgTest {\r\n  background: url('testimonials.a8bab47ace3780953586.jpg')  no-repeat center center fixed;\r\n  display: table; \r\n  position: relative;\r\n  height: 100vh;\r\n  width: 100%;\r\n  background-size: cover;\r\n  z-index: -1;\r\n}\r\n\r\n.bgTest:before {\r\n\tcontent: '';\r\n\tbackground: url('testimonials.a8bab47ace3780953586.jpg') no-repeat center center;\r\n\tposition: fixed;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\theight: 100vh;\r\n\twidth: 100%;\r\n\tbackground-size: cover; \r\n\tz-index: -1;\r\n}\r\n\r\n/* ----------------------------------------------Intro */\r\n\r\n.test-headline {\r\n  display: table-cell;\r\n\ttext-align: center;\r\n  vertical-align: middle;\r\n}\r\n\r\n/* Main heading */\r\n\r\n.test-headline h1 {\r\n\tfont-size: 500%;\r\n\ttext-shadow: 2px 2px 3px #3D8103;       \r\n\tcolor: #FFF;          \r\n  padding-bottom: 50px;\r\n  line-height: 150%;\t\r\n}\r\n\r\n/* Sub headings */\r\n\r\n.test-headline h5 {\r\n  font-size: 200%;\r\n  font-weight: 500;\r\n  color: #FFF;\r\n  text-shadow: 1px 1px 3px #3D8103; \r\n }\r\n\r\n/* -----------------------------------------------Animation */\r\n\r\n/* #whyStudy {\r\n  -webkit-animation-duration: 2s;\r\n  -webkit-animation-delay: 1s;\r\n}\r\n#quote1 {\r\n  -webkit-animation-duration: 2s;\r\n  -webkit-animation-delay: 3s;\r\n}\r\n#quote2 {\r\n  -webkit-animation-duration: 2s;\r\n  -webkit-animation-delay: 4s;\r\n}\r\n#quote3 {\r\n  -webkit-animation-duration: 2s;\r\n  -webkit-animation-delay: 5s;\r\n}\r\n#quote4 {\r\n  -webkit-animation-duration: 2s;\r\n  -webkit-animation-delay: 6s;\r\n}\r\n#quote5 {\r\n  -webkit-animation-duration: 2s;\r\n  -webkit-animation-delay: 7s;\r\n} */\r\n\r\n/*----------------------------------------Testimonial Section--------------------------*/\r\n\r\n.test {\r\n  width: 67%;\r\n  margin: 0 auto; \r\n  padding-top: 4rem;\r\n}\r\n\r\n.test hr {\r\n  border-top: 2px solid #FFF;\r\n  width: 25%; \r\n  margin-top: 1rem;\r\n  margin-bottom: 1rem; \r\n}\r\n\r\n.test h2 {\r\n  font-size: 600%;\r\n  font-weight: 500;\r\n  color: #FFF;\r\n  text-shadow: 2px 2px 3px #3D8103;  \r\n  margin-bottom: 3rem; \r\n\r\n}\r\n\r\n.test h5 {\r\n    font-size: 250%;\r\n    font-weight: 500;\r\n    color: #FFF;\r\n\r\n    margin-top: 5rem; \r\n    text-shadow: 1px 1px 3px #3D8103; \r\n  }\r\n\r\n.test h6 {\r\n  font-size: 200%;\r\n  font-weight: 500;\r\n  \r\n  color: #FFF;\r\n  text-shadow: 1px 1px 3px #3D8103; \r\n}\r\n\r\n/*-------------------------------------------Media Queries ---------------------------*/\r\n\r\n@media (max-width: 992px) {\r\n\r\n}\r\n\r\n@media (max-width: 768px) {\r\n\r\n  .test-headline h1 {\r\n\t  font-size: 400%;\r\n  }\r\n\r\n  .test-headline h5 {\r\n    font-size: 175%; \r\n  }\r\n\r\n  .test {\r\n    width: 80%;\r\n  }\r\n\r\n  .test h2 {\r\n    font-size: 400%; \r\n  }\r\n  \r\n  .test h6 {\r\n    font-size: 175%; \r\n  }\r\n\r\n}\r\n\r\n@media (max-width: 576px) {\r\n\r\n  .test-headline h1 {\r\n\t  font-size: 300%;\r\n  }\r\n\r\n  .test-headline h5 {\r\n    font-size: 150%; \r\n  }\r\n\r\n  .test {\r\n    width: 90%;\r\n  }\r\n  \r\n  .test h6 {\r\n    font-size: 150%; \r\n  }\r\n\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/policies/policies.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<section class=\"bgTest\">\n  <!-- <div class=\"test-headline text-center\">\n      <h1 id=\"whyStudy\" class=\"display-2 animated fadeIn\">Why study with Spheres?</h1> \n      <h5 id=\"quote5\" class=\"animated fadeIn\">Scroll down for more reviews</h5>     \n\n  </div>  -->\n  <div class=\"row test text-center\">\n    <div class=\"col-12\">\n      <h2 class=\"display-4\">School Policies</h2>\n      <h6>Welcome to Spheres School of Music! </h6>\n      <br>\n      <h6>These policies have been crafted to create a user-friendly and misunderstanding-free environment for students, parents and teachers.</h6>\n      <br>\n      \n      <h6>Spheres School of Music reserves the right to amend these policies from time to time and will update clients with an email should any changes occur. </h6>\n      <h5>Rates / Billing</h5>\n      <hr>\n      <h6>Spheres is currently teaching lessons out of students' homes in the Greater Victoria Area. Due to variance in travel times for the instructor, lesson rates are based on a sliding scale depending on the required travel time. Please contact us to get a lesson quote. </h6>\n      <br>      \n      <h6>Lesson invoices are issued bi-weekly and sent on the 16th and last day of each month. Payment is due within one week of receiving the invoice. We accept cash or e-transfers sent to anna@spheresschool.ca.  </h6>\n      <h5>Semester Schedule</h5>\n      <hr>\n      <h6>The fall semester runs from September - December with a break taken over Christmas.  </h6>\n      <h6>The winter semester runs from January - March with a break taken over Spring Vacation. </h6>\n      <h6>The spring semester runs from April - June. </h6>\n      <h6>Summer lessons run July - August and are available upon request.</h6>\n      <h6>There are no lessons on statutory holidays.  </h6>\n      <h5>Cancellations </h5>\n      <hr>\n      <h6>In the event a student is unable to attend a lesson,  Spheres School of Music requires a minimum of 48 hours notice to cancel or reschedule. This is in respect for our instructors who reserve a specific time for each student on a weekly basis. This 48 hours of notice provides our instructors the opportunity to reschedule their time. If this required notice is not provided, the student will be charged for the lesson. </h6>\n      <br> \n      <h6>If an instructor has to cancel a lesson, 48 hours of notice will be given and a make-up lesson time slot will be offered. </h6>\n    </div>\n  </div>\n\n</section>\n\n\n<!--- Testimonial Section -->\n\n<!-- <div class=\"container-fluid white padding\">\n  <div class=\"row test text-center\">\n    <div class=\"col-12\">\n      <h2 class=\"display-4\">Reviews</h2>\n    </div>\n    <hr>\n    <div class=\"col-12\">\n      <h6>\"When I went out to search for a piano instructor for my daughter I was looking for someone who of course loved music\n        but more importantly could pass that love along and make the learning experience fun, not a chore. Also, someone\n        who had patience, they were working with kids (so kind of a prerequisite). We went through two horrible experiences\n        before someone referred us to Anna, who has taught my daughter for the past four years. My daughter is now eleven\n        and practices without being nagged, I actually have to get her to stop on occasion, she is excited for her lessons\n        and her skill has excelled significantly. This is all because Anna made learning fun, she knows how to speak to kids\n        and keep them engaged. It has been a joy watching them work together!\" </h6>\n      <h6>- Jennifer Kanik</h6>\n      <hr>\n      <h6>Anna of Spheres School has been teaching piano to my son and daughter, aged 8 and 10, since March 2017. We have been\n        so impressed with their progress in this time. They have progressed from absolute beginners to kids that can read\n        notes, play the piano with both hands, and interpret the music with feeling. Most importantly, they’ve both grown\n        to thoroughly enjoy playing the piano! Anna’s calm demeanour and fun teaching methods were well received by both\n        kids and their individual learning styles. I know that my daughter also really appreciated having input into the\n        lesson plan when she got to choose some of the music to learn. Anna was always punctual and organized, and she made\n        very good use of the lesson time. I cannot recommend her highly enough. We are very sorry to see her leave Calgary! </h6>\n      <h6>- Kate Dochstader</h6>\n      <hr>\n      <h6>\"In just a couple of words Anna is an awesome piano teacher.   My children, 11 & 9, have been taking traditional piano\n        classes in the past and therefore lost interest in piano all together.  Until we found Anna. Anna can tune into the\n        individual needs of the students and allow them to be excited about learning piano. We are very happy for Anna's\n        new phase of life as she is moving closer to family in Victoria, BC. However, we are sad at the same time to let\n        her go.\" </h6>\n      <h6>- Izabela Bulman</h6>\n    </div>\n  </div>\n</div> -->"
+
+/***/ }),
+
+/***/ "./src/app/components/policies/policies.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PoliciesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PoliciesComponent = /** @class */ (function () {
+    function PoliciesComponent() {
+    }
+    PoliciesComponent.prototype.ngOnInit = function () {
+    };
+    PoliciesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-policies',
+            template: __webpack_require__("./src/app/components/policies/policies.component.html"),
+            styles: [__webpack_require__("./src/app/components/policies/policies.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PoliciesComponent);
+    return PoliciesComponent;
 }());
 
 
